@@ -1,10 +1,14 @@
 package com.pvetec.inspectra.controller;
 
 import cn.hutool.core.io.FileUtil;
+import com.pvetec.inspectra.pojo.CurrentTest;
+import com.pvetec.inspectra.pojo.TestItem;
 import com.pvetec.inspectra.transmission.Transmission;
 import com.pvetec.inspectra.transmission.TransmissionFactory;
 import com.pvetec.inspectra.transmission.TransmissionManager;
 import com.pvetec.inspectra.transmission.listener.DeviceConnectionListener;
+import com.pvetec.inspectra.utils.JsonBeanConverter;
+import com.pvetec.inspectra.utils.LogUtils;
 import javafx.application.Platform;
 import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.SimpleBooleanProperty;
@@ -19,16 +23,21 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import lombok.SneakyThrows;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.List;
 
 public class NavigationBarController implements DeviceConnectionListener {
+
     public static final String TAG = NavigationBarController.class.getSimpleName();
+
     private FXMLLoader guideDialogLoader;
+
     private GuideDialogController guideDialogController;
 
-    private BooleanProperty deviceConnectedProperty = new SimpleBooleanProperty(false);
+    private final BooleanProperty deviceConnectedProperty = new SimpleBooleanProperty(false);
 
     @FXML
     private Circle statusIndicator;
@@ -40,17 +49,23 @@ public class NavigationBarController implements DeviceConnectionListener {
 
     @FXML
     private void initialize() {
-        transmissionManager = new TransmissionManager();
-        transmissionManager.setCommunication("USB", this);
-        transmissionManager.setCommunication("Serial", this);
+        try {
+
+            CurrentTest currentTest = JsonBeanConverter.fileToBean("config/current_test.json", CurrentTest.class);
+
+            transmissionManager = new TransmissionManager();
+
+            transmissionManager.setCommunication(currentTest.getName(), this);
+
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
 
         try {
-            guideDialogLoader = new FXMLLoader(getClass().getResource("/com/pvetec/inspectra/controller/DialogView.fxml"));
+            guideDialogLoader = new FXMLLoader(getClass().getResource("DialogView.fxml"));
             Parent dialogRoot = guideDialogLoader.load();
             guideDialogController = guideDialogLoader.getController();
-            // Initialize the controller with data if needed
-            guideDialogController.a = FileUtil.readUtf8String(new File("E:\\PVT\\Project\\Inspectra\\config\\TestItem.json"));
-            System.out.println(guideDialogController.a);
+
         } catch (IOException e) {
             e.printStackTrace(); // Better error handling could be added here
         }
@@ -58,8 +73,16 @@ public class NavigationBarController implements DeviceConnectionListener {
 
     @FXML
     private void openDialog(ActionEvent event) {
+
         if (guideDialogController == null) {
             throw new IllegalStateException("Dialog controller not initialized.");
+        }
+
+        try {
+            List<com.pvetec.inspectra.pojo.Platform> platforms = JsonBeanConverter.fileToBeanList("config/test_model.json", com.pvetec.inspectra.pojo.Platform.class);
+            guideDialogController.setPlatformList(platforms);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
 
         // Create the dialog stage

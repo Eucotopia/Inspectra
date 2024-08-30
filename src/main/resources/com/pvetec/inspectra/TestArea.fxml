@@ -1,15 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+<VBox alignment="CENTER" spacing="10.0" xmlns:fx="http://javafx.com/fxml"
       fx:controller="com.pvetec.inspectra.controller.TestAreaController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
     </padding>
 
-    <Label fx:id="welcomeText"/>
+    <!-- 欢迎文本 -->
+    <Label fx:id="welcomeText" text="Test Area"/>
+
+    <!-- 测试项1 -->
+    <HBox alignment="CENTER_LEFT" spacing="10.0">
+        <Label text="Test Item 1"/>
+        <Label text="Result: Passed"/>
+    </HBox>
+
+    <!-- 测试项2 -->
+    <HBox alignment="CENTER_LEFT" spacing="10.0">
+        <Label text="Test Item 2"/>
+        <Label text="Result: Failed"/>
+    </HBox>
+
+    <!-- 测试项3 -->
+    <HBox alignment="CENTER_LEFT" spacing="10.0">
+        <Label text="Test Item 3"/>
+        <Label text="Result: Pending"/>
+    </HBox>
+
 </VBox>

@@ -20,7 +20,7 @@
                     <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
                 </padding>
                 <Label text="Step 1: Select Model Type"/>
-                <ComboBox fx:id="modelTypeComboBox" prefWidth="200.0">
+                <ComboBox fx:id="platformComboBox" prefWidth="200.0">
                     <items>
                         <FXCollections fx:factory="observableArrayList">
                             <String fx:value="MT8666"/>
@@ -35,7 +35,7 @@
                     <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
                 </padding>
                 <Label text="Step 2: Select Model"/>
-                <ComboBox fx:id="modelComboBox" prefWidth="200.0">
+                <ComboBox fx:id="projectTypeComboBox" prefWidth="200.0">
                     <items>
                         <FXCollections fx:factory="observableArrayList">
                             <String fx:value="BM400"/>
@@ -50,7 +50,7 @@
                     <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
                 </padding>
                 <Label text="Step 3: Select Additional Info"/>
-                <ComboBox fx:id="additionalInfoComboBox" prefWidth="200.0">
+                <ComboBox fx:id="testTypeComboBox" prefWidth="200.0">
                     <items>
                         <FXCollections fx:factory="observableArrayList">
                             <String fx:value="PCBA"/>

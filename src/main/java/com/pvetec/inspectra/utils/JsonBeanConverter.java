@@ -2,11 +2,10 @@ package com.pvetec.inspectra.utils;
 
 import cn.hutool.json.JSONArray;
 import cn.hutool.json.JSONUtil;
+import cn.hutool.core.io.FileUtil;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.List;
 
 public class JsonBeanConverter {
@@ -84,31 +83,10 @@ public class JsonBeanConverter {
      */
     public static <T> T fileToBean(String filePath, Class<T> beanClass) throws IOException {
         try {
-            String jsonString = new String(Files.readAllBytes(Paths.get(filePath)));
+            String jsonString = FileUtil.readUtf8String(new File(filePath));
             return jsonToBean(jsonString, beanClass);
-        } catch (IOException e) {
-            throw new IOException("Failed to read file: " + e.getMessage(), e);
         } catch (RuntimeException e) {
             throw new RuntimeException("Failed to convert file content to bean: " + e.getMessage(), e);
-        }
-    }
-
-    /**
-     * 将指定类型的对象写入到JSON文件中
-     *
-     * @param bean      对象
-     * @param filePath  文件路径
-     * @param <T>       Bean类型
-     * @throws IOException 文件写入异常
-     */
-    public static <T> void beanToFile(T bean, String filePath) throws IOException {
-        try {
-            String jsonString = beanToJson(bean);
-            Files.write(Paths.get(filePath), jsonString.getBytes());
-        } catch (IOException e) {
-            throw new IOException("Failed to write file: " + e.getMessage(), e);
-        } catch (RuntimeException e) {
-            throw new RuntimeException("Failed to convert bean to file content: " + e.getMessage(), e);
         }
     }
 
@@ -123,12 +101,27 @@ public class JsonBeanConverter {
      */
     public static <T> List<T> fileToBeanList(String filePath, Class<T> beanClass) throws IOException {
         try {
-            String jsonString = new String(Files.readAllBytes(Paths.get(filePath)));
+            String jsonString = FileUtil.readUtf8String(new File(filePath));
             return jsonToBeanList(jsonString, beanClass);
-        } catch (IOException e) {
-            throw new IOException("Failed to read file: " + e.getMessage(), e);
         } catch (RuntimeException e) {
             throw new RuntimeException("Failed to convert file content to bean list: " + e.getMessage(), e);
+        }
+    }
+
+    /**
+     * 将指定类型的对象写入到JSON文件中
+     *
+     * @param bean      对象
+     * @param filePath  文件路径
+     * @param <T>       Bean类型
+     * @throws IOException 文件写入异常
+     */
+    public static <T> void beanToFile(T bean, String filePath) throws IOException {
+        try {
+            String jsonString = beanToJson(bean);
+            FileUtil.writeUtf8String(jsonString, new File(filePath));
+        } catch (RuntimeException e) {
+            throw new RuntimeException("Failed to convert bean to file content: " + e.getMessage(), e);
         }
     }
 
@@ -143,9 +136,7 @@ public class JsonBeanConverter {
     public static <T> void beanListToFile(List<T> beanList, String filePath) throws IOException {
         try {
             String jsonString = beanListToJson(beanList);
-            Files.write(Paths.get(filePath), jsonString.getBytes());
-        } catch (IOException e) {
-            throw new IOException("Failed to write file: " + e.getMessage(), e);
+            FileUtil.writeUtf8String(jsonString, new File(filePath));
         } catch (RuntimeException e) {
             throw new RuntimeException("Failed to convert bean list to file content: " + e.getMessage(), e);
         }

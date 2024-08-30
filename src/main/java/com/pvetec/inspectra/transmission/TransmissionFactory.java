@@ -1,27 +1,34 @@
 package com.pvetec.inspectra.transmission;
 
+import com.pvetec.inspectra.enums.ProjectType;
+import com.pvetec.inspectra.enums.TransmissionType;
+import com.pvetec.inspectra.transmission.listener.DeviceConnectionListener;
 import com.pvetec.inspectra.transmission.serial.SerialTransmission;
 import com.pvetec.inspectra.transmission.socket.SocketTransmission;
 import com.pvetec.inspectra.transmission.usb.USBTransmission;
-import com.pvetec.inspectra.transmission.listener.DeviceConnectionListener;
 
 /**
  * Factory class for creating different types of Transmission instances.
  */
 public class TransmissionFactory {
+
     /**
-     * Creates a Transmission instance based on the specified type.
+     * Creates a Transmission instance based on the specified project name.
      *
-     * @param type the type of transmission ("USB", "Serial", "Socket")
+     * @param projectName the project name
      * @param listener the device connection listener
      * @return the created Transmission instance
      */
-    public static Transmission createCommunication(String type, DeviceConnectionListener listener) {
+    public static Transmission createCommunication(String projectName, DeviceConnectionListener listener) {
+
+        ProjectType projectType = ProjectType.fromName(projectName);
+
+        TransmissionType type = projectType.getCommunicationType();
+
         return switch (type) {
-            case "USB" -> new USBTransmission(listener);
-            case "Serial" -> new SerialTransmission(listener);
-            case "Socket" -> new SocketTransmission();
-            default -> throw new IllegalArgumentException("Unknown communication type: " + type);
+            case USB -> new USBTransmission(listener);
+            case SERIAL -> new SerialTransmission(listener);
+            case SOCKET -> new SocketTransmission();
         };
     }
 }

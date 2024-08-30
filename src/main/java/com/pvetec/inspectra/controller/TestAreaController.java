@@ -1,5 +1,6 @@
 package com.pvetec.inspectra.controller;
 
+import com.pvetec.inspectra.listener.ConfigUpdateListener;
 import javafx.beans.property.BooleanProperty;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
@@ -13,7 +14,7 @@ import java.io.IOException;
 /**
  * Controller class for handling the test area.
  */
-public class TestAreaController {
+public class TestAreaController implements ConfigUpdateListener {
 
     @FXML
     private Label welcomeText;
@@ -75,5 +76,16 @@ public class TestAreaController {
 
         // Add logic here to stop the test
         System.out.println("Test stopped");
+    }
+
+    @Override
+    public void onCurrentTestUpdated() {
+        // Implement the re-testing logic after configuration update
+        System.out.println("Configuration updated. Re-testing...");
+        restartTest();
+    }
+
+    private void restartTest() {
+        System.out.println("Re-starting Test...");
     }
 }

@@ -23,11 +23,11 @@ public class TransmissionManager {
     /**
      * Sets the communication type and initializes the Transmission instance.
      *
-     * @param type the type of transmission ("USB", "Serial", "Socket")
+     * @param project the type of transmission ("USB", "Serial", "Socket")
      * @param listener the device connection listener
      */
-    public void setCommunication(String type, DeviceConnectionListener listener) {
-        this.transmission = TransmissionFactory.createCommunication(type, listener);
+    public void setCommunication(String project, DeviceConnectionListener listener) {
+        this.transmission = TransmissionFactory.createCommunication(project, listener);
     }
 
     /**

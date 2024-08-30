@@ -1,0 +1,72 @@
+[
+  {
+    "name": "MT 8666",
+    "projects": [
+      {
+        "name": "BM400",
+        "code": 1,
+        "testTypes": [
+          {
+            "name": "核心板测试",
+            "code": 1,
+            "items": [
+              {
+                "code": 200,
+                "name": "开机"
+              }
+            ]
+          },
+          {
+            "name": "休眠测试",
+            "code": 2,
+            "items": [
+              {
+                "code": 200,
+                "name": "开机"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MT 8675",
+    "projects": [
+      {
+        "name": "P13",
+        "code": 2,
+        "testTypes": [
+          {
+            "name": "核心板测试",
+            "code": 1,
+            "items": [
+              {
+                "code": 200,
+                "name": "开机"
+              },
+              {
+                "code": 201,
+                "name": "SOC电流"
+              }
+            ]
+          },
+          {
+            "name": "休眠测试",
+            "code": 2,
+            "items": [
+              {
+                "code": 200,
+                "name": "开机"
+              },
+              {
+                "code": 205,
+                "name": "i2c-2"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

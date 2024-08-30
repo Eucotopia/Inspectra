@@ -1,9 +1,11 @@
 <configuration>
     <!-- 控制台输出 appender -->
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
-        <encoder>
-            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
-            <highlight>TRACE=blue, DEBUG=green, INFO=white, WARN=yellow, ERROR=red</highlight>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} [%X{tag}] - %msg%n</pattern>
+            <pattern>
+                %highlight(%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n)
+            </pattern>
         </encoder>
     </appender>
 
@@ -16,7 +18,7 @@
             <!-- 保留30天的日志文件 -->
             <maxHistory>30</maxHistory>
         </rollingPolicy>
-        <encoder>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
             <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
         </encoder>
     </appender>

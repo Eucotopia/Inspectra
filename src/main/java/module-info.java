@@ -9,10 +9,14 @@ module com.pvetec.inspectra {
     requires org.slf4j;
     requires lombok;
     requires usb.api;
+    requires java.sql;
+    requires jdk.incubator.vector;
+
 
     opens com.pvetec.inspectra to javafx.fxml;
     opens com.pvetec.inspectra.controller to javafx.fxml;
 
     exports com.pvetec.inspectra;
     exports com.pvetec.inspectra.controller to javafx.fxml;
+    exports com.pvetec.inspectra.pojo to cn.hutool;
 }

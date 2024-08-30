@@ -70,6 +70,7 @@ public class USBTransmission implements Transmission {
         @Override
         public void usbDeviceDetached(UsbServicesEvent event) {
             LogUtils.e(TAG,"USB device disconnected");
+            LogUtils.highlight(TAG,"USB device detached");
             if (connectionListener != null) {
                 connectionListener.onDeviceDisconnected();
             }
