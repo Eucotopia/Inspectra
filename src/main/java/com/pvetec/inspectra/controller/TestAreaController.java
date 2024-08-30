@@ -40,14 +40,39 @@ public class TestAreaController {
         // Listen for device connection changes
         BooleanProperty deviceConnectedProperty = navigationBarController.deviceConnectedProperty();
 
-        deviceConnectedProperty.addListener(new ChangeListener<Boolean>() {
-            @Override
-            public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
-                if (!newValue) {
-                    // Device disconnected, update the welcome text
-                    welcomeText.setText("Device Disconnected");
+        deviceConnectedProperty.addListener((observable, oldValue, newValue) -> {
+            if (oldValue != newValue) { // Only act if there's a change
+                if (newValue) {
+                    // Device connected, start the test
+                    startTest();
+                } else {
+                    // Device disconnected, stop the test
+                    stopTest();
                 }
             }
         });
+    }
+
+
+    /**
+     * Starts the test.
+     */
+    private void startTest() {
+        // Update the welcome text
+        welcomeText.setText("Device Connected. Starting Test...");
+
+        // Add logic here to start the test
+        System.out.println("Test started");
+    }
+
+    /**
+     * Stops the test.
+     */
+    private void stopTest() {
+        // Update the welcome text
+        welcomeText.setText("Device Disconnected. Stopping Test...");
+
+        // Add logic here to stop the test
+        System.out.println("Test stopped");
     }
 }
