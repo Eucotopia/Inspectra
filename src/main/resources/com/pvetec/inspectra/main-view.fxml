@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.fxml.FXML?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.pvetec.inspectra.MainController">
+
+  <top>
+    <VBox>
+      <fx:include source="NavigationBar.fxml"/>
+    </VBox>
+  </top>
+
+  <center>
+    <VBox>
+      <fx:include source="TestArea.fxml"/>
+    </VBox>
+  </center>
+
+</BorderPane>

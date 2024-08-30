@@ -1,0 +1,76 @@
+2024-08-30 12:38:51.583 [JavaFX Application Thread] INFO  PVT - GuideDialogController - [
+  {
+    "code": 200,
+    "name": "开机"
+  },
+  {
+    "code": 201,
+    "name": "SOC电流"
+  },
+  {
+    "code": 202,
+    "name": "SOC电压-2"
+  },
+  {
+    "code": 203,
+    "name": "i2c-0"
+  },
+  {
+    "code": 204,
+    "name": "i2c-1"
+  },
+  {
+    "code": 205,
+    "name": "i2c-2"
+  }
+]
+
+2024-08-30 12:40:14.610 [JavaFX Application Thread] INFO  PVT - NavigationBarController - [
+  {
+    "code": 200,
+    "name": "开机"
+  },
+  {
+    "code": 201,
+    "name": "SOC电流"
+  },
+  {
+    "code": 202,
+    "name": "SOC电压-2"
+  },
+  {
+    "code": 203,
+    "name": "i2c-0"
+  },
+  {
+    "code": 204,
+    "name": "i2c-1"
+  },
+  {
+    "code": 205,
+    "name": "i2c-2"
+  }
+]
+
+2024-08-30 18:23:27.417 [usb4java Device Scanner] INFO  PVT - USBTransmission - USB device connected
+2024-08-30 18:23:27.423 [usb4java Device Scanner] INFO  PVT - USBTransmission - USB device connected
+2024-08-30 18:23:27.423 [usb4java Device Scanner] INFO  PVT - USBTransmission - USB device connected
+2024-08-30 18:23:27.423 [usb4java Device Scanner] INFO  PVT - USBTransmission - USB device connected
+2024-08-30 18:23:27.423 [usb4java Device Scanner] INFO  PVT - USBTransmission - USB device connected
+2024-08-30 18:23:27.423 [usb4java Device Scanner] INFO  PVT - USBTransmission - USB device connected
+2024-08-30 18:23:27.423 [usb4java Device Scanner] INFO  PVT - USBTransmission - USB device connected
+2024-08-30 18:23:27.423 [usb4java Device Scanner] INFO  PVT - USBTransmission - USB device connected
+2024-08-30 18:23:27.423 [usb4java Device Scanner] INFO  PVT - USBTransmission - USB device connected
+2024-08-30 18:23:27.423 [usb4java Device Scanner] INFO  PVT - USBTransmission - USB device connected
+2024-08-30 18:23:27.423 [usb4java Device Scanner] INFO  PVT - USBTransmission - USB device connected
+2024-08-30 18:23:27.424 [usb4java Device Scanner] INFO  PVT - USBTransmission - USB device connected
+2024-08-30 18:23:27.424 [usb4java Device Scanner] INFO  PVT - USBTransmission - USB device connected
+2024-08-30 18:23:27.424 [usb4java Device Scanner] INFO  PVT - USBTransmission - USB device connected
+2024-08-30 18:23:31.568 [usb4java Device Scanner] ERROR PVT - USBTransmission - USB device disconnected
+2024-08-30 18:23:31.568 [usb4java Device Scanner] ERROR PVT - USBTransmission - USB device disconnected
+2024-08-30 18:23:35.194 [usb4java Device Scanner] INFO  PVT - USBTransmission - USB device connected
+2024-08-30 18:23:35.194 [usb4java Device Scanner] INFO  PVT - USBTransmission - USB device connected
+2024-08-30 18:23:38.311 [usb4java Device Scanner] ERROR PVT - USBTransmission - USB device disconnected
+2024-08-30 18:23:38.312 [usb4java Device Scanner] ERROR PVT - USBTransmission - USB device disconnected
+2024-08-30 18:23:39.356 [usb4java Device Scanner] INFO  PVT - USBTransmission - USB device connected
+2024-08-30 18:23:39.356 [usb4java Device Scanner] INFO  PVT - USBTransmission - USB device connected
