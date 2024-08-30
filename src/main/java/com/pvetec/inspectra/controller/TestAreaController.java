@@ -24,6 +24,7 @@ public class TestAreaController {
     private void initialize() {
         // Set the text for the Label dynamically
         welcomeText.setText("Welcome to the Test Area!");
+        
         try {
 
             //FXMLLoader必须使用参数初始化，否则getController会失败
