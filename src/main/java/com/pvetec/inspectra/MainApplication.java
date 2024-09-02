@@ -14,9 +14,10 @@ public class MainApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("main-view.fxml"));
+        MainController controller = (MainController)fxmlLoader.getController();
         Scene scene = new Scene(fxmlLoader.load());
 
-        stage.setTitle("Hello!");
+        stage.setTitle("PveTec FactoryTest");
         // 调用方法设置窗口大小和位置
         setWindowSizeAndPosition(stage);
 
@@ -31,8 +32,8 @@ public class MainApplication extends Application {
         double screenHeight = screenBounds.getHeight();
 
         // 设置窗口的大小为屏幕的一半
-        double windowWidth = screenWidth / 2;
-        double windowHeight = screenHeight / 2;
+        double windowWidth = screenWidth * 0.8;
+        double windowHeight = screenHeight * 0.8;
 
         // 设置窗口的大小
         stage.setWidth(windowWidth);

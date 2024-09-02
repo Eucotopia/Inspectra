@@ -10,4 +10,5 @@ import lombok.NoArgsConstructor;
 public class TestItem {
     private Integer code;
     private String name;
+    private String result;
 }

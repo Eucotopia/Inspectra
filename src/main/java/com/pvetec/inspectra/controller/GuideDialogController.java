@@ -1,6 +1,6 @@
 package com.pvetec.inspectra.controller;
 
-import com.pvetec.inspectra.listener.ConfigUpdateListener;
+import com.pvetec.inspectra.pojo.SharedData;
 import com.pvetec.inspectra.pojo.CurrentTest;
 import com.pvetec.inspectra.pojo.Platform;
 import com.pvetec.inspectra.pojo.Project;
@@ -19,8 +19,13 @@ import java.util.List;
 
 public class GuideDialogController {
 
-    @Setter
-    private ConfigUpdateListener configUpdateListener;
+
+    private SharedData sharedData;
+
+    public void setSharedData(SharedData sharedData) {
+        this.sharedData = sharedData;
+        System.out.println("setSharedData:" + sharedData);
+    }
 
     public static final String TAG = GuideDialogController.class.getSimpleName();
 
@@ -51,6 +56,7 @@ public class GuideDialogController {
 
     @FXML
     private void initialize() {
+        System.out.println("guideDialog initialize");
         if (platformList != null) {
             initializeComboBoxes();
         }
@@ -134,8 +140,8 @@ public class GuideDialogController {
             LogUtils.e(TAG, "Failed to save data to file:" + e.getMessage());
         }
 
-        if (configUpdateListener != null) {
-            configUpdateListener.onCurrentTestUpdated();
+        if (sharedData != null) {
+            sharedData.setOperationFinished(true);
         }
 
         // Close the dialog

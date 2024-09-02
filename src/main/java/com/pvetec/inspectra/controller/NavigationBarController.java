@@ -1,33 +1,31 @@
 package com.pvetec.inspectra.controller;
 
-import cn.hutool.core.io.FileUtil;
+import com.pvetec.inspectra.MainController;
+import com.pvetec.inspectra.pojo.SharedData;
 import com.pvetec.inspectra.pojo.CurrentTest;
-import com.pvetec.inspectra.pojo.TestItem;
-import com.pvetec.inspectra.transmission.Transmission;
-import com.pvetec.inspectra.transmission.TransmissionFactory;
 import com.pvetec.inspectra.transmission.TransmissionManager;
 import com.pvetec.inspectra.transmission.listener.DeviceConnectionListener;
 import com.pvetec.inspectra.utils.JsonBeanConverter;
 import com.pvetec.inspectra.utils.LogUtils;
 import javafx.application.Platform;
-import javafx.beans.property.BooleanProperty;
-import javafx.beans.property.SimpleBooleanProperty;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
+import javafx.scene.control.*;
+import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-import lombok.SneakyThrows;
+import lombok.Setter;
 
+import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
+
 
 public class NavigationBarController implements DeviceConnectionListener {
 
@@ -35,9 +33,10 @@ public class NavigationBarController implements DeviceConnectionListener {
 
     private FXMLLoader guideDialogLoader;
 
-    private GuideDialogController guideDialogController;
+    @Setter
+    private SharedData sharedData;
 
-    private final BooleanProperty deviceConnectedProperty = new SimpleBooleanProperty(false);
+    private GuideDialogController guideDialogController;
 
     @FXML
     private Circle statusIndicator;
@@ -48,7 +47,20 @@ public class NavigationBarController implements DeviceConnectionListener {
     private Label statusLabel;
 
     @FXML
+    private Tooltip statusLabelTooltip;
+
+
+    @FXML
     private void initialize() {
+        // Check if Tooltip is injected correctly
+        if (statusLabel.getTooltip() != null) {
+            statusLabelTooltip = statusLabel.getTooltip();
+        } else {
+            // If Tooltip is not set in FXML, create one dynamically
+            statusLabelTooltip = new Tooltip("Serial Number: null");
+            statusLabel.setTooltip(statusLabelTooltip);
+        }
+
         try {
 
             CurrentTest currentTest = JsonBeanConverter.fileToBean("config/current_test.json", CurrentTest.class);
@@ -62,18 +74,22 @@ public class NavigationBarController implements DeviceConnectionListener {
         }
 
         try {
+
             guideDialogLoader = new FXMLLoader(getClass().getResource("DialogView.fxml"));
+
             Parent dialogRoot = guideDialogLoader.load();
+
             guideDialogController = guideDialogLoader.getController();
 
+            guideDialogController.setSharedData(MainController.sharedData);
+
         } catch (IOException e) {
-            e.printStackTrace(); // Better error handling could be added here
+            LogUtils.e(TAG, e.getMessage());
         }
     }
 
     @FXML
     private void openDialog(ActionEvent event) {
-
         if (guideDialogController == null) {
             throw new IllegalStateException("Dialog controller not initialized.");
         }
@@ -81,6 +97,7 @@ public class NavigationBarController implements DeviceConnectionListener {
         try {
             List<com.pvetec.inspectra.pojo.Platform> platforms = JsonBeanConverter.fileToBeanList("config/test_model.json", com.pvetec.inspectra.pojo.Platform.class);
             guideDialogController.setPlatformList(platforms);
+
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -116,11 +133,13 @@ public class NavigationBarController implements DeviceConnectionListener {
      * Called when a device is connected. Updates the status indicator and label.
      */
     @Override
-    public void onDeviceConnected() {
+    public void onDeviceConnected(String serialNumber) {
         Platform.runLater(() -> {
             statusIndicator.setFill(Color.GREEN);
             statusLabel.setText("Device Connected");
-            deviceConnectedProperty.set(true);
+            // Create and set Tooltip for statusLabel
+            setTooltipText(serialNumber);
+            sharedData.setDeviceConnected(true);
         });
     }
 
@@ -132,16 +151,61 @@ public class NavigationBarController implements DeviceConnectionListener {
         Platform.runLater(() -> {
             statusIndicator.setFill(Color.RED);
             statusLabel.setText("Device Disconnected");
-            deviceConnectedProperty.set(false);
+            statusLabelTooltip.setText("Serial Number: null");
+            // Notify SharedData
+            sharedData.setDeviceConnected(false);
         });
     }
 
     /**
-     * Returns the device connected property.
-     *
-     * @return the device connected property
+     * 动态设置 Tooltip 的文本内容
      */
-    public BooleanProperty deviceConnectedProperty() {
-        return deviceConnectedProperty;
+    public void setTooltipText(String newText) {
+        if (statusLabelTooltip != null) {
+            statusLabelTooltip.setText("Serial Number: " + newText);
+        }
+    }
+
+    @FXML
+    private void showAbout(ActionEvent event) {
+        try {
+            // Load the FXML for the dialog content
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/pvetec/inspectra/controller/AboutDialog.fxml"));
+            VBox content = loader.load();
+
+            // Create and configure the dialog
+            Dialog<Void> dialog = new Dialog<>();
+            dialog.setTitle("About Inspectra");
+            dialog.getDialogPane().setContent(content);
+
+            // Show the dialog and wait until the user closes it
+            dialog.showAndWait();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+
+    @FXML
+    private void openLogFolder(ActionEvent event) {
+        File logDir = new File("logs");
+
+        if (logDir.exists() && logDir.isDirectory()) {
+            try {
+                Desktop.getDesktop().open(logDir);
+            } catch (IOException e) {
+                Alert errorAlert = new Alert(Alert.AlertType.ERROR);
+                errorAlert.setTitle("Error");
+                errorAlert.setHeaderText("Open Log Folder Failed");
+                errorAlert.setContentText("Could not open log folder: " + e.getMessage());
+                errorAlert.showAndWait();
+            }
+        } else {
+            Alert errorAlert = new Alert(Alert.AlertType.ERROR);
+            errorAlert.setTitle("Error");
+            errorAlert.setHeaderText("Log Folder Not Found");
+            errorAlert.setContentText("The specified log folder does not exist.");
+            errorAlert.showAndWait();
+        }
     }
 }

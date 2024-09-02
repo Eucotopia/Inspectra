@@ -10,7 +10,7 @@ module com.pvetec.inspectra {
     requires lombok;
     requires usb.api;
     requires java.sql;
-    requires jdk.incubator.vector;
+    requires java.desktop;
 
 
     opens com.pvetec.inspectra to javafx.fxml;
@@ -18,5 +18,6 @@ module com.pvetec.inspectra {
 
     exports com.pvetec.inspectra;
     exports com.pvetec.inspectra.controller to javafx.fxml;
-    exports com.pvetec.inspectra.pojo to cn.hutool;
+    exports com.pvetec.inspectra.pojo;
+    opens com.pvetec.inspectra.pojo to javafx.fxml;
 }

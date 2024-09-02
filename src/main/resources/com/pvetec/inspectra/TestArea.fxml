@@ -2,34 +2,25 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Priority?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox alignment="CENTER" spacing="10.0" xmlns:fx="http://javafx.com/fxml"
+<HBox alignment="CENTER" spacing="10.0" xmlns:fx="http://javafx.com/fxml/1"
       fx:controller="com.pvetec.inspectra.controller.TestAreaController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
     </padding>
-
-    <!-- 欢迎文本 -->
-    <Label fx:id="welcomeText" text="Test Area"/>
-
-    <!-- 测试项1 -->
-    <HBox alignment="CENTER_LEFT" spacing="10.0">
-        <Label text="Test Item 1"/>
-        <Label text="Result: Passed"/>
-    </HBox>
-
-    <!-- 测试项2 -->
-    <HBox alignment="CENTER_LEFT" spacing="10.0">
-        <Label text="Test Item 2"/>
-        <Label text="Result: Failed"/>
-    </HBox>
-
-    <!-- 测试项3 -->
-    <HBox alignment="CENTER_LEFT" spacing="10.0">
-        <Label text="Test Item 3"/>
-        <Label text="Result: Pending"/>
-    </HBox>
-
-</VBox>
+    <VBox spacing="10.0" fillWidth="true">
+        <Label fx:id="welcomeText" text="Welcome to the Test Area"/>
+        <TableView fx:id="testTableView" prefHeight="400.0" prefWidth="600.0" VBox.vgrow="ALWAYS">
+            <columns>
+                <TableColumn fx:id="codeColumn" text="Code" prefWidth="150.0"/>
+                <TableColumn fx:id="nameColumn" text="Name" prefWidth="250.0"/>
+                <TableColumn fx:id="resultColumn" text="Result" prefWidth="200.0"/>
+            </columns>
+        </TableView>
+    </VBox>
+</HBox>

@@ -3,37 +3,64 @@ package com.pvetec.inspectra;
 import com.pvetec.inspectra.controller.GuideDialogController;
 import com.pvetec.inspectra.controller.NavigationBarController;
 import com.pvetec.inspectra.controller.TestAreaController;
-import javafx.beans.property.BooleanProperty;
-import javafx.beans.property.SimpleBooleanProperty;
+import com.pvetec.inspectra.pojo.SharedData;
+import com.pvetec.inspectra.utils.LogUtils;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
-import javafx.scene.control.Label;
-import jdk.incubator.vector.VectorOperators;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
+import lombok.Getter;
 
 import java.io.IOException;
 
 public class MainController {
 
+    public static final String TAG = MainController.class.getSimpleName();
+
+    public static final SharedData sharedData = new SharedData();
 
     @FXML
+    private VBox testAreaVBox;
+
+    @FXML
+    private VBox navigationBarVBox;
+
+    @Getter
+    private TestAreaController testAreaController;
+
+    @Getter
     private NavigationBarController navigationBarController;
 
     @FXML
-    private TestAreaController testAreaController;
+    public void initialize() {
+        loadTestArea();
+        loadNavigationBar();
+        navigationBarController.setSharedData(sharedData);
+        testAreaController.setSharedData(sharedData);
+    }
 
-    @FXML
-    private GuideDialogController guideDialogController;
-
-    @FXML
-    private void initialize() {
+    private void loadTestArea() {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/pvetec/inspectra/controller/DialogView.fxml"));
-            Parent guideDialogRoot = loader.load();
-            guideDialogController = loader.getController();
-            guideDialogController.setConfigUpdateListener(testAreaController);
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("TestArea.fxml"));
+            HBox testArea = loader.load();
+            testAreaController = loader.getController();
+            testAreaVBox.getChildren().add(testArea);
+
         } catch (IOException e) {
-            e.printStackTrace();
+            LogUtils.e(TAG, e.getMessage());
         }
     }
+
+    private void loadNavigationBar() {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("NavigationBar.fxml"));
+            HBox navigationBar = loader.load();
+            navigationBarController = loader.getController();
+            navigationBarVBox.getChildren().add(navigationBar);
+        } catch (IOException e) {
+            LogUtils.e(TAG, e.getMessage());
+        }
+    }
+
 }

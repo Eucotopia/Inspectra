@@ -7,7 +7,7 @@ public interface DeviceConnectionListener {
     /**
      * Called when a device is connected.
      */
-    void onDeviceConnected();
+    void onDeviceConnected(String serialNumber);
 
     /**
      * Called when a device is disconnected.

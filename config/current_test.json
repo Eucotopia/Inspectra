@@ -1,1 +1,13 @@
-{"name":"MT 8675","testType":{"name":"核心板测试","code":1,"items":[{"code":200,"name":"开机"},{"code":201,"name":"SOC电流"}]}}
+{
+  "name": "MT 8666",
+  "testType": {
+    "name": "核心板测试",
+    "code": 1,
+    "items": [
+      {
+        "code": 200,
+        "name": "开机"
+      }
+    ]
+  }
+}
