@@ -1,0 +1,7 @@
+{
+  "serialPortName": "com12",
+  "baudRate": 921600,
+  "dataBits": 8,
+  "stopBits": 1,
+  "parity": 0
+}

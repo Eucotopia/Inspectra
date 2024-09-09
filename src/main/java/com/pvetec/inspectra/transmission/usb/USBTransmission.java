@@ -28,7 +28,7 @@ public class USBTransmission implements Transmission {
             UsbServices usbServices = UsbHostManager.getUsbServices();
             usbServices.addUsbServicesListener(usbServicesListener);
         } catch (UsbException e) {
-            e.printStackTrace();
+            LogUtils.i(TAG, e.getMessage());
         }
     }
 
@@ -74,7 +74,7 @@ public class USBTransmission implements Transmission {
                     LogUtils.i(TAG, "Connected USB device is not an Android device");
                 }
             } catch (Exception e) {
-                e.printStackTrace();
+                LogUtils.e(TAG, e.getMessage());
             }
         }
 

@@ -10,7 +10,6 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class TestType {
-
     private String name;
     private int code;
     private List<TestItem> items;

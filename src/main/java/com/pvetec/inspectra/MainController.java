@@ -1,13 +1,11 @@
 package com.pvetec.inspectra;
 
-import com.pvetec.inspectra.controller.GuideDialogController;
 import com.pvetec.inspectra.controller.NavigationBarController;
 import com.pvetec.inspectra.controller.TestAreaController;
 import com.pvetec.inspectra.pojo.SharedData;
 import com.pvetec.inspectra.utils.LogUtils;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import lombok.Getter;

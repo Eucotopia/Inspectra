@@ -2,15 +2,11 @@ package com.pvetec.inspectra.controller;
 
 import com.pvetec.inspectra.pojo.SharedData;
 import com.pvetec.inspectra.pojo.TestItem;
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
-
-import java.util.List;
 
 /**
  * Controller class for handling the test area.
@@ -35,16 +31,13 @@ public class TestAreaController {
 
     public void setSharedData(SharedData sharedData) {
         // 监听设备连接状态和操作完成状态的变化
-        sharedData.deviceConnectedProperty().addListener(new ChangeListener<Boolean>() {
-            @Override
-            public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
-                // 检查状态是否从 disconnected (false) 变为 connected (true)
-                if (oldValue != newValue) {
-                    if (newValue) {
-                        welcomeText.setText("Device Connected. Starting Test...");
-                    } else {
-                        welcomeText.setText("Device Disconnected. Stopping Test...");
-                    }
+        sharedData.deviceConnectedProperty().addListener((observable, oldValue, newValue) -> {
+            // 检查状态是否从 disconnected (false) 变为 connected (true)
+            if (oldValue != newValue) {
+                if (newValue) {
+                    welcomeText.setText("Device Connected. Starting Test...");
+                } else {
+                    welcomeText.setText("Device Disconnected. Stopping Test...");
                 }
             }
         });

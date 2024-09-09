@@ -11,6 +11,7 @@ module com.pvetec.inspectra {
     requires usb.api;
     requires java.sql;
     requires java.desktop;
+    requires com.fazecast.jSerialComm;
 
 
     opens com.pvetec.inspectra to javafx.fxml;
