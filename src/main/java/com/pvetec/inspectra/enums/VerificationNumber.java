@@ -13,7 +13,8 @@ public enum VerificationNumber {
     MAC_ADDRESS("MAC Address", 3),
     SERIAL_NUMBER("Serial Number", 4),
     DEVICE_ID("Device ID", 5),
-    IMEI("IMEI", 6);
+    IMEI_1("IMEI_1", 6),
+    IMEI_2("IMEI_2", 7);
 
     private final String description;
     private final int code;

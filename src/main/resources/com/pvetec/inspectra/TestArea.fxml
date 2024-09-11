@@ -15,12 +15,7 @@
     </padding>
     <VBox spacing="10.0" fillWidth="true">
         <Label fx:id="welcomeText" text="Welcome to the Test Area"/>
-        <TableView fx:id="testTableView" prefHeight="400.0" prefWidth="600.0" VBox.vgrow="ALWAYS">
-            <columns>
-                <TableColumn fx:id="codeColumn" text="Code" prefWidth="150.0"/>
-                <TableColumn fx:id="nameColumn" text="Name" prefWidth="250.0"/>
-                <TableColumn fx:id="resultColumn" text="Result" prefWidth="200.0"/>
-            </columns>
-        </TableView>
+        <!-- Add VBox for dynamic content -->
+        <VBox fx:id="testAreaVBox" spacing="10.0" fillWidth="true"/>
     </VBox>
 </HBox>

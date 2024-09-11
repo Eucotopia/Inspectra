@@ -1,14 +1,17 @@
 package com.pvetec.inspectra.controller;
 
 import com.pvetec.inspectra.MainController;
+import com.pvetec.inspectra.enums.StationEnum;
 import com.pvetec.inspectra.pojo.SharedData;
 import com.pvetec.inspectra.pojo.CurrentTest;
 import com.pvetec.inspectra.transmission.TransmissionManager;
 import com.pvetec.inspectra.transmission.listener.DeviceConnectionListener;
 import com.pvetec.inspectra.utils.JsonBeanConverter;
-import com.pvetec.inspectra.utils.LogUtils;
+import com.pvetec.inspectra.utils.LogUtil;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
+import javafx.event.Event;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -31,6 +34,9 @@ public class NavigationBarController implements DeviceConnectionListener {
 
     public static final String TAG = NavigationBarController.class.getSimpleName();
 
+    @FXML
+    private MenuButton stationMenuButton;
+
     private FXMLLoader guideDialogLoader;
 
     @Setter
@@ -52,6 +58,7 @@ public class NavigationBarController implements DeviceConnectionListener {
 
     @FXML
     private void initialize() {
+        initStationMenu();
         // Check if Tooltip is injected correctly
         if (statusLabel.getTooltip() != null) {
             statusLabelTooltip = statusLabel.getTooltip();
@@ -84,20 +91,42 @@ public class NavigationBarController implements DeviceConnectionListener {
             guideDialogController.setSharedData(MainController.sharedData);
 
         } catch (IOException e) {
-            LogUtils.e(TAG, e.getMessage());
+            LogUtil.e(TAG, e.getMessage());
+        }
+    }
+
+    private void initStationMenu() {
+        // Clear existing items
+        stationMenuButton.getItems().clear();
+        // Iterate over StationEnum values and create MenuItem for each
+        for (StationEnum station : StationEnum.values()) {
+            MenuItem menuItem = new MenuItem(station.getName());
+            menuItem.setOnAction(e -> handleStationSelection(station));
+            stationMenuButton.getItems().add(menuItem);
+        }
+    }
+
+    private void handleStationSelection(StationEnum station) {
+        // Execute the appropriate test based on the selected station
+        switch (station) {
+            case SN_WRITER, VERIFICATION_NUMBER:
+                sharedData.setStationEnumProperty(station);
+                break;
+            default:
         }
     }
 
     @FXML
     private void openDialog(ActionEvent event) {
+
         if (guideDialogController == null) {
             throw new IllegalStateException("Dialog controller not initialized.");
         }
 
-        try {
-            List<com.pvetec.inspectra.pojo.Platform> platforms = JsonBeanConverter.fileToBeanList("config/test_model.json", com.pvetec.inspectra.pojo.Platform.class);
-            guideDialogController.setPlatformList(platforms);
+        List<com.pvetec.inspectra.pojo.Platform> platforms;
 
+        try {
+            platforms = JsonBeanConverter.fileToBeanList("config/test_model.json", com.pvetec.inspectra.pojo.Platform.class);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -117,17 +146,29 @@ public class NavigationBarController implements DeviceConnectionListener {
         double dialogWidth = primaryWidth * 0.5; // 50% of primary stage width
         double dialogHeight = primaryHeight * 0.5; // 50% of primary stage height
 
-        Scene dialogScene = new Scene(guideDialogLoader.getRoot(), dialogWidth, dialogHeight);
-        dialogStage.setScene(dialogScene);
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("DialogView.fxml"));
+            Parent root = loader.load();
 
-        // Center the dialog on the primary stage
-        dialogStage.centerOnScreen(); // Center the dialog on the screen
-        dialogStage.setX(primaryStage.getX() + (primaryWidth - dialogWidth) / 2); // Center horizontally
-        dialogStage.setY(primaryStage.getY() + (primaryHeight - dialogHeight) / 2); // Center vertically
+            GuideDialogController newController = loader.getController();
+            newController.setSharedData(MainController.sharedData);
+            newController.setPlatformList(platforms);
 
-        // Show the dialog and wait for it to close
-        dialogStage.showAndWait();
+            Scene dialogScene = new Scene(root, dialogWidth, dialogHeight);
+            dialogStage.setScene(dialogScene);
+
+            // Center the dialog on the primary stage
+            dialogStage.setX(primaryStage.getX() + (primaryWidth - dialogWidth) / 2);
+            dialogStage.setY(primaryStage.getY() + (primaryHeight - dialogHeight) / 2);
+
+            dialogStage.showAndWait();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
+
+
+
 
     /**
      * Called when a device is connected. Updates the status indicator and label.

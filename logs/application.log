@@ -1,29 +1,311 @@
-2024-09-09 08:45:11.982 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
-2024-09-09 08:45:11.988 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
-2024-09-09 08:45:11.988 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
-2024-09-09 08:45:11.988 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
-2024-09-09 08:45:11.988 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
-2024-09-09 08:45:11.989 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
-2024-09-09 08:45:11.989 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
-2024-09-09 08:45:11.990 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
-2024-09-09 08:45:24.562 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
-2024-09-09 08:45:33.144 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
-2024-09-09 08:55:07.822 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
-2024-09-09 08:55:07.824 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
-2024-09-09 08:55:07.824 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
-2024-09-09 08:55:07.824 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
-2024-09-09 08:55:07.824 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
-2024-09-09 08:55:07.824 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
-2024-09-09 08:55:07.825 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
-2024-09-09 08:55:07.825 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
-2024-09-09 08:55:07.825 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
-2024-09-09 08:55:18.794 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
-2024-09-09 08:56:26.416 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
-2024-09-09 08:56:26.419 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
-2024-09-09 08:56:26.419 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
-2024-09-09 08:56:26.419 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
-2024-09-09 08:56:26.420 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
-2024-09-09 08:56:26.420 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
-2024-09-09 08:56:26.420 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
-2024-09-09 08:56:26.420 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
-2024-09-09 08:56:26.420 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 10:42:16.849 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 10:42:16.864 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 10:42:16.864 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 10:42:16.865 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 10:42:16.865 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 10:42:16.867 [usb4java Device Scanner] INFO  PveTec - 
+【IMPORTANT】 USBTransmission: usbDeviceAttached usbServicesEvent: Bus 001 Device 001: ID 0e8d:201c
+
+2024-09-11 10:42:17.314 [usb4java Device Scanner] INFO  PveTec - 
+【IMPORTANT】 USBTransmission: usbDeviceAttached serialNumber: 0123456789ABCDEF
+
+2024-09-11 10:42:17.478 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 10:42:17.479 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 11:13:33.787 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 11:13:33.799 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 11:13:33.799 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 11:13:33.800 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 11:13:33.800 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 11:13:33.800 [usb4java Device Scanner] INFO  PveTec - 
+【IMPORTANT】 USBTransmission: usbDeviceAttached usbServicesEvent: Bus 001 Device 001: ID 0e8d:201c
+
+2024-09-11 11:13:33.927 [usb4java Device Scanner] INFO  PveTec - 
+【IMPORTANT】 USBTransmission: usbDeviceAttached serialNumber: 0123456789ABCDEF
+
+2024-09-11 11:13:34.010 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 11:13:34.011 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 11:18:37.227 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 11:18:37.231 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 11:18:37.231 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 11:18:37.231 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 11:18:37.231 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 11:18:37.232 [usb4java Device Scanner] INFO  PveTec - 
+【IMPORTANT】 USBTransmission: usbDeviceAttached usbServicesEvent: Bus 001 Device 001: ID 0e8d:201c
+
+2024-09-11 11:18:37.352 [usb4java Device Scanner] INFO  PveTec - 
+【IMPORTANT】 USBTransmission: usbDeviceAttached serialNumber: 0123456789ABCDEF
+
+2024-09-11 11:18:37.442 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 11:18:37.442 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 11:23:32.616 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 11:23:32.619 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 11:23:32.619 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 11:23:32.620 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 11:23:32.620 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 11:23:32.621 [usb4java Device Scanner] INFO  PveTec - 
+【IMPORTANT】 USBTransmission: usbDeviceAttached usbServicesEvent: Bus 001 Device 001: ID 0e8d:201c
+
+2024-09-11 11:23:32.727 [usb4java Device Scanner] INFO  PveTec - 
+【IMPORTANT】 USBTransmission: usbDeviceAttached serialNumber: 0123456789ABCDEF
+
+2024-09-11 11:23:32.813 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 11:23:32.813 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 11:29:34.986 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 11:29:34.990 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 11:29:34.990 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 11:29:34.990 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 11:29:34.990 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 11:29:34.991 [usb4java Device Scanner] INFO  PveTec - 
+【IMPORTANT】 USBTransmission: usbDeviceAttached usbServicesEvent: Bus 001 Device 001: ID 0e8d:201c
+
+2024-09-11 11:29:35.131 [usb4java Device Scanner] INFO  PveTec - 
+【IMPORTANT】 USBTransmission: usbDeviceAttached serialNumber: 0123456789ABCDEF
+
+2024-09-11 11:29:35.233 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 11:29:35.234 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 11:36:11.578 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 11:36:11.582 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 11:36:11.582 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 11:36:11.582 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 11:36:11.582 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 11:36:11.582 [usb4java Device Scanner] INFO  PveTec - 
+【IMPORTANT】 USBTransmission: usbDeviceAttached usbServicesEvent: Bus 001 Device 001: ID 0e8d:201c
+
+2024-09-11 11:36:11.699 [usb4java Device Scanner] INFO  PveTec - 
+【IMPORTANT】 USBTransmission: usbDeviceAttached serialNumber: 0123456789ABCDEF
+
+2024-09-11 11:36:11.805 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 11:36:11.806 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 11:43:43.985 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 11:43:43.988 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 11:43:43.988 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 11:43:43.989 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 11:43:43.989 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 11:43:43.990 [usb4java Device Scanner] INFO  PveTec - 
+【IMPORTANT】 USBTransmission: usbDeviceAttached usbServicesEvent: Bus 001 Device 001: ID 0e8d:201c
+
+2024-09-11 11:43:44.124 [usb4java Device Scanner] INFO  PveTec - 
+【IMPORTANT】 USBTransmission: usbDeviceAttached serialNumber: 0123456789ABCDEF
+
+2024-09-11 11:43:44.222 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 11:43:44.222 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 11:43:53.294 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] StringProperty [value: SN_Writer]
+2024-09-11 11:43:53.295 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] null
+2024-09-11 11:43:53.295 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] SN_Writer
+2024-09-11 11:46:11.204 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 11:46:11.206 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 11:46:11.207 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 11:46:11.207 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 11:46:11.207 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 11:46:11.209 [usb4java Device Scanner] INFO  PveTec - 
+【IMPORTANT】 USBTransmission: usbDeviceAttached usbServicesEvent: Bus 001 Device 001: ID 0e8d:201c
+
+2024-09-11 11:46:11.363 [usb4java Device Scanner] INFO  PveTec - 
+【IMPORTANT】 USBTransmission: usbDeviceAttached serialNumber: 0123456789ABCDEF
+
+2024-09-11 11:46:11.552 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 11:46:11.552 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 11:46:19.341 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] StringProperty [value: SN_Writer]
+2024-09-11 11:46:19.341 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] null
+2024-09-11 11:46:19.341 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] SN_Writer
+2024-09-11 11:46:21.412 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] StringProperty [value: Verification_Number]
+2024-09-11 11:46:21.412 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] SN_Writer
+2024-09-11 11:46:21.412 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Verification_Number
+2024-09-11 11:50:04.571 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 11:50:04.577 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 11:50:04.578 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 11:50:04.579 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 11:50:04.579 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 11:50:04.582 [usb4java Device Scanner] INFO  PveTec - 
+【IMPORTANT】 USBTransmission: usbDeviceAttached usbServicesEvent: Bus 001 Device 001: ID 0e8d:201c
+
+2024-09-11 11:50:04.832 [usb4java Device Scanner] INFO  PveTec - 
+【IMPORTANT】 USBTransmission: usbDeviceAttached serialNumber: 0123456789ABCDEF
+
+2024-09-11 11:50:05.003 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 11:50:05.004 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 11:50:13.997 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] IntegerProperty [value: 102]
+2024-09-11 11:50:13.997 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] 0
+2024-09-11 11:50:13.997 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] 102
+2024-09-11 11:50:22.323 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] IntegerProperty [value: 101]
+2024-09-11 11:50:22.323 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] 102
+2024-09-11 11:50:22.323 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] 101
+2024-09-11 12:10:35.498 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 12:10:35.500 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 12:10:35.501 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 12:10:35.501 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 12:10:35.501 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 12:10:35.501 [usb4java Device Scanner] INFO  PveTec - 
+【IMPORTANT】 USBTransmission: usbDeviceAttached usbServicesEvent: Bus 001 Device 001: ID 0e8d:201c
+
+2024-09-11 12:10:35.616 [usb4java Device Scanner] INFO  PveTec - 
+【IMPORTANT】 USBTransmission: usbDeviceAttached serialNumber: 0123456789ABCDEF
+
+2024-09-11 12:10:35.708 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 12:10:35.708 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 12:10:38.308 [usb4java Device Scanner] WARN  PveTec - [USBTransmission] usbDeviceDetached usbServicesEvent : Bus 001 Device 001: ID 0e8d:201c
+2024-09-11 12:11:11.710 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 12:11:11.713 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 12:11:11.713 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 12:11:11.713 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 12:11:11.713 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 12:11:11.713 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 12:11:11.713 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 12:11:16.374 [usb4java Device Scanner] INFO  PveTec - 
+【IMPORTANT】 USBTransmission: usbDeviceAttached usbServicesEvent: Bus 001 Device 001: ID 0e8d:201c
+
+2024-09-11 12:11:16.439 [usb4java Device Scanner] INFO  PveTec - 
+【IMPORTANT】 USBTransmission: usbDeviceAttached serialNumber: null
+
+2024-09-11 12:11:17.547 [usb4java Device Scanner] WARN  PveTec - [USBTransmission] usbDeviceDetached usbServicesEvent : Bus 001 Device 001: ID 0e8d:201c
+2024-09-11 12:11:19.129 [usb4java Device Scanner] INFO  PveTec - 
+【IMPORTANT】 USBTransmission: usbDeviceAttached usbServicesEvent: Bus 001 Device 001: ID 0e8d:201c
+
+2024-09-11 12:11:19.231 [usb4java Device Scanner] INFO  PveTec - 
+【IMPORTANT】 USBTransmission: usbDeviceAttached serialNumber: null
+
+2024-09-11 12:11:20.904 [usb4java Device Scanner] WARN  PveTec - [USBTransmission] usbDeviceDetached usbServicesEvent : Bus 001 Device 001: ID 0e8d:201c
+2024-09-11 12:11:21.950 [usb4java Device Scanner] INFO  PveTec - 
+【IMPORTANT】 USBTransmission: usbDeviceAttached usbServicesEvent: Bus 001 Device 001: ID 0e8d:201c
+
+2024-09-11 12:11:22.089 [usb4java Device Scanner] INFO  PveTec - 
+【IMPORTANT】 USBTransmission: usbDeviceAttached serialNumber: null
+
+2024-09-11 12:11:23.752 [usb4java Device Scanner] WARN  PveTec - [USBTransmission] usbDeviceDetached usbServicesEvent : Bus 001 Device 001: ID 0e8d:201c
+2024-09-11 12:11:25.847 [usb4java Device Scanner] INFO  PveTec - 
+【IMPORTANT】 USBTransmission: usbDeviceAttached usbServicesEvent: Bus 001 Device 001: ID 0e8d:201c
+
+2024-09-11 12:11:25.936 [usb4java Device Scanner] INFO  PveTec - 
+【IMPORTANT】 USBTransmission: usbDeviceAttached serialNumber: 0123456789ABCDEF
+
+2024-09-11 12:13:49.076 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 12:13:49.079 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 12:13:49.079 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 12:13:49.079 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 12:13:49.080 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 12:13:49.080 [usb4java Device Scanner] INFO  PveTec - 
+【IMPORTANT】 USBTransmission: usbDeviceAttached usbServicesEvent: Bus 001 Device 001: ID 0e8d:201c
+
+2024-09-11 12:13:49.169 [usb4java Device Scanner] INFO  PveTec - 
+【IMPORTANT】 USBTransmission: usbDeviceAttached serialNumber: 0123456789ABCDEF
+
+2024-09-11 12:13:49.250 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 12:13:49.251 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 12:13:54.437 [usb4java Device Scanner] WARN  PveTec - [USBTransmission] usbDeviceDetached usbServicesEvent : Bus 001 Device 001: ID 0e8d:201c
+2024-09-11 12:13:59.106 [usb4java Device Scanner] INFO  PveTec - 
+【IMPORTANT】 USBTransmission: usbDeviceAttached usbServicesEvent: Bus 001 Device 001: ID 0e8d:201c
+
+2024-09-11 12:13:59.170 [usb4java Device Scanner] INFO  PveTec - 
+【IMPORTANT】 USBTransmission: usbDeviceAttached serialNumber: null
+
+2024-09-11 12:14:37.439 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 12:14:37.442 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 12:14:37.442 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 12:14:37.442 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 12:14:37.442 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 12:14:37.443 [usb4java Device Scanner] INFO  PveTec - 
+【IMPORTANT】 USBTransmission: usbDeviceAttached usbServicesEvent: Bus 001 Device 001: ID 0e8d:201c
+
+2024-09-11 12:14:37.533 [usb4java Device Scanner] INFO  PveTec - 
+【IMPORTANT】 USBTransmission: usbDeviceAttached serialNumber: 0123456789ABCDEF
+
+2024-09-11 12:14:37.608 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 12:14:37.609 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 12:14:37.609 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] SharedData(deviceConnected=BooleanProperty [value: true], operationFinished=BooleanProperty [value: false], StationProperty=IntegerProperty [value: 0])
+2024-09-11 12:14:39.159 [usb4java Device Scanner] WARN  PveTec - [USBTransmission] usbDeviceDetached usbServicesEvent : Bus 001 Device 001: ID 0e8d:201c
+2024-09-11 12:14:39.160 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] SharedData(deviceConnected=BooleanProperty [value: false], operationFinished=BooleanProperty [value: false], StationProperty=IntegerProperty [value: 0])
+2024-09-11 12:14:45.392 [usb4java Device Scanner] INFO  PveTec - 
+【IMPORTANT】 USBTransmission: usbDeviceAttached usbServicesEvent: Bus 001 Device 001: ID 0e8d:201c
+
+2024-09-11 12:14:45.456 [usb4java Device Scanner] INFO  PveTec - 
+【IMPORTANT】 USBTransmission: usbDeviceAttached serialNumber: null
+
+2024-09-11 12:14:45.523 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] SharedData(deviceConnected=BooleanProperty [value: true], operationFinished=BooleanProperty [value: false], StationProperty=IntegerProperty [value: 0])
+2024-09-11 12:14:53.710 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] SharedData(deviceConnected=BooleanProperty [value: true], operationFinished=BooleanProperty [value: false], StationProperty=IntegerProperty [value: 102])
+2024-09-11 12:14:53.710 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] IntegerProperty [value: 102]
+2024-09-11 12:14:53.710 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] 0
+2024-09-11 12:14:53.710 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] 102
+2024-09-11 12:23:49.559 [JavaFX Application Thread] ERROR PveTec - [MainController] 
+/E:/PVT/Project/Inspectra/target/classes/com/pvetec/inspectra/TestArea.fxml
+
+2024-09-11 12:24:03.637 [JavaFX Application Thread] ERROR PveTec - [MainController] 
+/E:/PVT/Project/Inspectra/target/classes/com/pvetec/inspectra/TestArea.fxml
+
+2024-09-11 12:25:56.862 [JavaFX Application Thread] ERROR PveTec - [MainController] 
+/E:/PVT/Project/Inspectra/target/classes/com/pvetec/inspectra/TestArea.fxml
+
+2024-09-11 12:27:33.544 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 12:27:33.546 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 12:27:33.546 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 12:27:33.547 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 12:27:33.547 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 12:27:33.549 [usb4java Device Scanner] INFO  PveTec - 
+【IMPORTANT】 USBTransmission: usbDeviceAttached usbServicesEvent: Bus 001 Device 001: ID 0e8d:201c
+
+2024-09-11 12:27:33.654 [usb4java Device Scanner] INFO  PveTec - 
+【IMPORTANT】 USBTransmission: usbDeviceAttached serialNumber: 0123456789ABCDEF
+
+2024-09-11 12:27:33.747 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 12:27:33.748 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 12:27:37.763 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from null to StationEnum.SN_WRITER(code=101, name=SN_Writer, description=Station for writing serial numbers)
+2024-09-11 12:28:35.472 [JavaFX Application Thread] ERROR PveTec - [MainController] 
+/E:/PVT/Project/Inspectra/target/classes/com/pvetec/inspectra/TestArea.fxml
+
+2024-09-11 12:29:02.454 [JavaFX Application Thread] ERROR PveTec - [MainController] 
+/E:/PVT/Project/Inspectra/target/classes/com/pvetec/inspectra/TestArea.fxml
+
+2024-09-11 12:31:12.939 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 12:31:12.945 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 12:31:12.945 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 12:31:12.945 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 12:31:12.946 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 12:31:12.947 [usb4java Device Scanner] INFO  PveTec - 
+【IMPORTANT】 USBTransmission: usbDeviceAttached usbServicesEvent: Bus 001 Device 001: ID 0e8d:201c
+
+2024-09-11 12:31:13.060 [usb4java Device Scanner] INFO  PveTec - 
+【IMPORTANT】 USBTransmission: usbDeviceAttached serialNumber: 0123456789ABCDEF
+
+2024-09-11 12:31:13.142 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 12:31:13.142 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 12:31:15.078 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from null to StationEnum.SN_WRITER(code=101, name=SN_Writer, description=Station for writing serial numbers)
+2024-09-11 12:31:17.265 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from StationEnum.SN_WRITER(code=101, name=SN_Writer, description=Station for writing serial numbers) to StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers)
+2024-09-11 12:31:18.257 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers) to StationEnum.SN_WRITER(code=101, name=SN_Writer, description=Station for writing serial numbers)
+2024-09-11 12:31:19.169 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from StationEnum.SN_WRITER(code=101, name=SN_Writer, description=Station for writing serial numbers) to StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers)
+2024-09-11 12:31:22.337 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers) to StationEnum.SN_WRITER(code=101, name=SN_Writer, description=Station for writing serial numbers)
+2024-09-11 12:31:23.433 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from StationEnum.SN_WRITER(code=101, name=SN_Writer, description=Station for writing serial numbers) to StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers)
+2024-09-11 12:31:24.642 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers) to StationEnum.SN_WRITER(code=101, name=SN_Writer, description=Station for writing serial numbers)
+2024-09-11 12:31:28.720 [usb4java Device Scanner] WARN  PveTec - [USBTransmission] usbDeviceDetached usbServicesEvent : Bus 001 Device 001: ID 0e8d:201c
+2024-09-11 12:33:36.360 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 12:33:36.364 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 12:33:36.364 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 12:33:36.364 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 12:33:36.364 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 12:33:36.364 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 12:33:36.365 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 12:33:51.957 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from null to StationEnum.SN_WRITER(code=101, name=SN_Writer, description=Station for writing serial numbers)
+2024-09-11 12:34:00.199 [usb4java Device Scanner] INFO  PveTec - 
+【IMPORTANT】 USBTransmission: usbDeviceAttached usbServicesEvent: Bus 001 Device 001: ID 0e8d:201c
+
+2024-09-11 12:34:00.270 [usb4java Device Scanner] INFO  PveTec - 
+【IMPORTANT】 USBTransmission: usbDeviceAttached serialNumber: null
+
+2024-09-11 12:34:02.647 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from StationEnum.SN_WRITER(code=101, name=SN_Writer, description=Station for writing serial numbers) to StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers)
+2024-09-11 12:34:03.663 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Starting test...
+2024-09-11 12:34:05.015 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Starting test...
+2024-09-11 12:34:05.551 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Starting test...
+2024-09-11 12:34:05.719 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Starting test...
+2024-09-11 12:34:06.150 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Starting test...
+2024-09-11 12:34:08.047 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers) to StationEnum.SN_WRITER(code=101, name=SN_Writer, description=Station for writing serial numbers)
+2024-09-11 12:34:46.775 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 12:34:46.777 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 12:34:46.778 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 12:34:46.778 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 12:34:46.778 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 12:34:46.779 [usb4java Device Scanner] INFO  PveTec - 
+【IMPORTANT】 USBTransmission: usbDeviceAttached usbServicesEvent: Bus 001 Device 001: ID 0e8d:201c
+
+2024-09-11 12:34:46.889 [usb4java Device Scanner] INFO  PveTec - 
+【IMPORTANT】 USBTransmission: usbDeviceAttached serialNumber: 0123456789ABCDEF
+
+2024-09-11 12:34:46.981 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device
+2024-09-11 12:34:46.981 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device

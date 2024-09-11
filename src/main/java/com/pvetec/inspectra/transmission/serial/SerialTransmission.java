@@ -5,7 +5,7 @@ import com.fazecast.jSerialComm.SerialPortDataListener;
 import com.fazecast.jSerialComm.SerialPortEvent;
 import com.pvetec.inspectra.transmission.Transmission;
 import com.pvetec.inspectra.transmission.listener.DeviceConnectionListener;
-import com.pvetec.inspectra.utils.LogUtils;
+import com.pvetec.inspectra.utils.LogUtil;
 
 
 public class SerialTransmission implements Transmission {
@@ -34,7 +34,7 @@ public class SerialTransmission implements Transmission {
                             break;
                         case SerialPort.LISTENING_EVENT_PORT_DISCONNECTED:
                             connectionListener.onDeviceDisconnected();
-                            LogUtils.w(TAG,"disconnected");
+                            LogUtil.w(TAG,"disconnected");
                             break;
                         default:
                             break;
@@ -42,7 +42,7 @@ public class SerialTransmission implements Transmission {
                 }
             });
         } catch (Exception e) {
-            LogUtils.e(TAG, e.getMessage());
+            LogUtil.e(TAG, e.getMessage());
         }
     }
 

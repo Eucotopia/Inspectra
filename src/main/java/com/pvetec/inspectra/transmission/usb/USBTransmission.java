@@ -1,17 +1,14 @@
 package com.pvetec.inspectra.transmission.usb;
 
-import cn.hutool.core.bean.BeanUtil;
 import com.pvetec.inspectra.transmission.Transmission;
 import com.pvetec.inspectra.transmission.listener.DeviceConnectionListener;
 import com.pvetec.inspectra.utils.ADBUtil;
-import com.pvetec.inspectra.utils.LogUtils;
+import com.pvetec.inspectra.utils.LogUtil;
 
 
 import javax.usb.*;
 import javax.usb.event.UsbServicesEvent;
 import javax.usb.event.UsbServicesListener;
-import java.io.UnsupportedEncodingException;
-import java.util.List;
 
 public class USBTransmission implements Transmission {
 
@@ -23,12 +20,11 @@ public class USBTransmission implements Transmission {
 
     public USBTransmission(DeviceConnectionListener connectionListener) {
         this.connectionListener = connectionListener;
-
         try {
             UsbServices usbServices = UsbHostManager.getUsbServices();
             usbServices.addUsbServicesListener(usbServicesListener);
         } catch (UsbException e) {
-            LogUtils.i(TAG, e.getMessage());
+            LogUtil.i(TAG, e.getMessage());
         }
     }
 
@@ -65,16 +61,16 @@ public class USBTransmission implements Transmission {
             UsbDevice device = event.getUsbDevice();
             try {
                 if (isAndroidDevice(device)) {
-                    LogUtils.highlight(TAG, "usbDeviceAttached usbServicesEvent: " + device);
-                    LogUtils.highlight(TAG, "usbDeviceAttached serialNumber: " + ADBUtil.getFirstAdbDevice());
+                    LogUtil.highlight(TAG, "usbDeviceAttached usbServicesEvent: " + device);
+                    LogUtil.highlight(TAG, "usbDeviceAttached serialNumber: " + ADBUtil.getFirstAdbDevice());
                     if (connectionListener != null) {
                         connectionListener.onDeviceConnected(ADBUtil.getFirstAdbDevice());
                     }
                 } else {
-                    LogUtils.i(TAG, "Connected USB device is not an Android device");
+                    LogUtil.i(TAG, "Connected USB device is not an Android device");
                 }
             } catch (Exception e) {
-                LogUtils.e(TAG, e.getMessage());
+                LogUtil.e(TAG, e.getMessage());
             }
         }
 
@@ -82,7 +78,7 @@ public class USBTransmission implements Transmission {
         public void usbDeviceDetached(UsbServicesEvent event) {
             UsbDevice device = event.getUsbDevice();
             if (isAndroidDevice(device)) {
-                LogUtils.w(TAG, "usbDeviceDetached usbServicesEvent : " + device);
+                LogUtil.w(TAG, "usbDeviceDetached usbServicesEvent : " + device);
                 if (connectionListener != null) {
                     connectionListener.onDeviceDisconnected();
                 }

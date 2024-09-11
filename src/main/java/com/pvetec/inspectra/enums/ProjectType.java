@@ -5,7 +5,7 @@ import lombok.Getter;
 @Getter
 public enum ProjectType {
     BM400(TransmissionType.USB),
-    DEFAULT_PROJECT(TransmissionType.SERIAL);
+    DEFAULT_PROJECT(TransmissionType.USB);
 
     private final TransmissionType communicationType;
 

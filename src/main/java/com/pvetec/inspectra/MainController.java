@@ -3,7 +3,7 @@ package com.pvetec.inspectra;
 import com.pvetec.inspectra.controller.NavigationBarController;
 import com.pvetec.inspectra.controller.TestAreaController;
 import com.pvetec.inspectra.pojo.SharedData;
-import com.pvetec.inspectra.utils.LogUtils;
+import com.pvetec.inspectra.utils.LogUtil;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.layout.HBox;
@@ -46,7 +46,7 @@ public class MainController {
             testAreaVBox.getChildren().add(testArea);
 
         } catch (IOException e) {
-            LogUtils.e(TAG, e.getMessage());
+            LogUtil.e(TAG, e.getMessage());
         }
     }
 
@@ -57,7 +57,7 @@ public class MainController {
             navigationBarController = loader.getController();
             navigationBarVBox.getChildren().add(navigationBar);
         } catch (IOException e) {
-            LogUtils.e(TAG, e.getMessage());
+            LogUtil.e(TAG, e.getMessage());
         }
     }
 

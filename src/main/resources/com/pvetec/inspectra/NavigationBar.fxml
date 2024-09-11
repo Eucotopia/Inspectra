@@ -12,13 +12,17 @@
 
     <!-- 导航按钮 -->
     <HBox spacing="10.0" alignment="CENTER_LEFT">
-        <Button text="Home"/>
-        <Button text="Settings"/>
-        <Button text="Reports"/>
-        <Button text="Help"/>
         <!-- 打开模态对话框的按钮 -->
         <Button text="Open Dialog" onAction="#openDialog"/>
     </HBox>
+
+
+    <!-- Station MenuButton -->
+    <MenuButton fx:id="stationMenuButton" text="Station">
+        <items>
+            <!-- MenuItems will be added programmatically -->
+        </items>
+    </MenuButton>
 
     <!-- Help MenuButton -->
     <MenuButton text="Help">

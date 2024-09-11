@@ -6,19 +6,19 @@ import com.pvetec.inspectra.pojo.Platform;
 import com.pvetec.inspectra.pojo.Project;
 import com.pvetec.inspectra.pojo.TestType;
 import com.pvetec.inspectra.utils.JsonBeanConverter;
-import com.pvetec.inspectra.utils.LogUtils;
+import com.pvetec.inspectra.utils.LogUtil;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-import lombok.Setter;
 
 import java.io.IOException;
 import java.util.List;
 
 public class GuideDialogController {
 
+    public static final String TAG = GuideDialogController.class.getSimpleName();
 
     private SharedData sharedData;
 
@@ -27,10 +27,11 @@ public class GuideDialogController {
         System.out.println("setSharedData:" + sharedData);
     }
 
-    public static final String TAG = GuideDialogController.class.getSimpleName();
 
     private List<Platform> platformList;
+
     private Platform selectedPlatform;
+
     private Project selectedProject;
 
     private int currentStep = 1;
@@ -54,9 +55,10 @@ public class GuideDialogController {
     @FXML
     private Button nextButton;
 
+    private String test;
     @FXML
     private void initialize() {
-        System.out.println("guideDialog initialize");
+        test="adsfasdf";
         if (platformList != null) {
             initializeComboBoxes();
         }
@@ -88,7 +90,7 @@ public class GuideDialogController {
         String selectedTestTypeName = testTypeComboBox.getValue();
 
         if (selectedPlatformName == null || selectedProjectName == null || selectedTestTypeName == null) {
-            LogUtils.e(TAG, "Please make sure all selections are made.");
+            LogUtil.e(TAG, "Please make sure all selections are made.");
             return;
         }
 
@@ -98,7 +100,7 @@ public class GuideDialogController {
                 .orElse(null);
 
         if (selectedPlatform == null) {
-            LogUtils.e(TAG, "Selected platform not found.");
+            LogUtil.e(TAG, "Selected platform not found.");
             return;
         }
 
@@ -108,7 +110,7 @@ public class GuideDialogController {
                 .orElse(null);
 
         if (selectedProject == null) {
-            LogUtils.e(TAG, "Selected project not found.");
+            LogUtil.e(TAG, "Selected project not found.");
             return;
         }
 
@@ -118,7 +120,7 @@ public class GuideDialogController {
                 .orElse(null);
 
         if (selectedTestType == null) {
-            LogUtils.e(TAG, "Selected test type not found.");
+            LogUtil.e(TAG, "Selected test type not found.");
             return;
         }
 
@@ -130,14 +132,14 @@ public class GuideDialogController {
 
         // Create final JSON structure
         CurrentTest finishData = new CurrentTest();
-        finishData.setName(selectedPlatform.getName());
+        finishData.setName(selectedProject.getName());
         finishData.setTestType(testTypeData);
 
         // Save data to file using JsonBeanConverter
         try {
             JsonBeanConverter.beanToFile(finishData, "config/current_test.json");
         } catch (IOException e) {
-            LogUtils.e(TAG, "Failed to save data to file:" + e.getMessage());
+            LogUtil.e(TAG, "Failed to save data to file:" + e.getMessage());
         }
 
         if (sharedData != null) {
@@ -169,8 +171,11 @@ public class GuideDialogController {
     }
 
     private void initializeComboBoxes() {
+        // 平台类型
         platformComboBox.getItems().clear();
+        // 项目类型
         projectTypeComboBox.getItems().clear();
+        // 测试类型
         testTypeComboBox.getItems().clear();
 
         platformList.forEach(platform -> platformComboBox.getItems().add(platform.getName()));
@@ -181,6 +186,7 @@ public class GuideDialogController {
         }
 
         platformComboBox.setOnAction(event -> updateProjectTypeComboBox());
+
         projectTypeComboBox.setOnAction(event -> updateTestTypeComboBox());
     }
 

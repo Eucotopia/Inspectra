@@ -3,7 +3,7 @@ package com.pvetec.inspectra.utils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class LogUtils {
+public class LogUtil {
     private static final Logger logger = LoggerFactory.getLogger("PveTec");
 
     public static void i(String tag, String message) {

@@ -1,13 +1,14 @@
 package com.pvetec.inspectra.pojo;
 
-import javafx.beans.property.BooleanProperty;
-import javafx.beans.property.SimpleBooleanProperty;
-import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.property.StringProperty;
+import com.pvetec.inspectra.enums.StationEnum;
+import javafx.beans.property.*;
 import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
+@Data
+@Setter
+@Getter
 public class SharedData {
 
     private final BooleanProperty deviceConnected = new SimpleBooleanProperty(false);
@@ -15,8 +16,15 @@ public class SharedData {
     private final BooleanProperty operationFinished = new SimpleBooleanProperty(false);
 
 
+    private final SimpleObjectProperty<StationEnum> stationEnumProperty = new SimpleObjectProperty<>();
+
     public BooleanProperty deviceConnectedProperty() {
         return deviceConnected;
+    }
+
+
+    public SimpleObjectProperty<StationEnum> stationEnumSimpleObjectProperty(){
+        return stationEnumProperty;
     }
 
     public boolean isDeviceConnected() {
@@ -25,6 +33,10 @@ public class SharedData {
 
     public void setDeviceConnected(boolean connected) {
         this.deviceConnected.set(connected);
+    }
+
+    public void setStationEnumProperty(StationEnum stationEnumProperty){
+        this.stationEnumProperty.set(stationEnumProperty);
     }
 
     public BooleanProperty operationFinishedProperty() {
