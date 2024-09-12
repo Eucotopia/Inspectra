@@ -8,7 +8,8 @@ import lombok.ToString;
 /**
  * Enum representing different types of stations in the inspection process.
  * Each station type has a unique code, a name, and a description.
- * @author LIWEI
+ * <p>
+ * Author: LIWEI
  */
 @Getter
 @ToString
@@ -39,4 +40,34 @@ public enum StationEnum {
      * A brief description of the station's function.
      */
     private final String description;
+
+    /**
+     * Finds the StationEnum by its code.
+     *
+     * @param code The code of the station.
+     * @return The StationEnum associated with the given code, or null if not found.
+     */
+    public static StationEnum fromCode(Integer code) {
+        for (StationEnum station : values()) {
+            if (station.getCode().equals(code)) {
+                return station;
+            }
+        }
+        return null;
+    }
+
+    /**
+     * Finds the StationEnum by its name.
+     *
+     * @param name The name of the station.
+     * @return The StationEnum associated with the given name, or null if not found.
+     */
+    public static StationEnum fromName(String name) {
+        for (StationEnum station : values()) {
+            if (station.getName().equalsIgnoreCase(name)) {
+                return station;
+            }
+        }
+        return null;
+    }
 }

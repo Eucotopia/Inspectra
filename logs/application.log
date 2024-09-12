@@ -1,311 +1,252 @@
-2024-09-12 15:33:43.925 [JavaFX Application Thread] INFO  PveTec - 
-【IMPORTANT】 TestAreaController: Current test station: Verification_Number
+2024-09-13 00:06:35.320 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
+2024-09-13 00:06:35.323 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
+2024-09-13 00:06:35.341 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from null to StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers)
+2024-09-13 00:07:06.703 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers) to StationEnum.SN_WRITER(code=101, name=SN_Writer, description=Station for writing serial numbers)
+2024-09-13 00:07:07.682 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from StationEnum.SN_WRITER(code=101, name=SN_Writer, description=Station for writing serial numbers) to StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers)
+2024-09-13 00:07:38.884 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
+2024-09-13 00:07:38.885 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
+2024-09-13 00:07:43.001 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from null to StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers)
+2024-09-13 00:10:34.719 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
+2024-09-13 00:10:34.721 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
+2024-09-13 00:10:45.827 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from null to StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers)
+2024-09-13 00:11:27.996 [JavaFX Application Thread] INFO  PveTec - 
+【IMPORTANT】 VerificationNumberTestWorkflow: VerificationValues(bluetoothAddrPrefix=503C, wifiAddrPrefix=503C, serialNumberLength=12, imei1=123456789012345, imei2=543210987654321)
 
-2024-09-12 15:33:44.597 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 15:33:44.597 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 15:33:44.597 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 15:33:44.597 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 15:33:44.598 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 15:33:44.607 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 15:33:44.607 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 15:33:44.607 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
-2024-09-12 18:17:55.334 [JavaFX Application Thread] INFO  PveTec - 
-【IMPORTANT】 TestAreaController: Current test station: Verification_Number
+2024-09-13 00:11:40.169 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers) to StationEnum.SN_WRITER(code=101, name=SN_Writer, description=Station for writing serial numbers)
+2024-09-13 00:11:41.107 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from StationEnum.SN_WRITER(code=101, name=SN_Writer, description=Station for writing serial numbers) to StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers)
+2024-09-13 00:11:46.192 [JavaFX Application Thread] INFO  PveTec - 
+【IMPORTANT】 VerificationNumberTestWorkflow: VerificationValues(bluetoothAddrPrefix=503C, wifiAddrPrefix=503C, serialNumberLength=12, imei1=123456789012345, imei2=543210987654321)
 
-2024-09-12 18:17:55.777 [JavaFX Application Thread] ERROR PveTec - [MainController] 
-/E:/PVT/Project/Inspectra/target/classes/com/pvetec/inspectra/NavigationBar.fxml
+2024-09-13 00:11:56.236 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
+2024-09-13 00:11:56.237 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
+2024-09-13 00:11:56.258 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from null to StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers)
+2024-09-13 00:11:56.262 [JavaFX Application Thread] INFO  PveTec - 
+【IMPORTANT】 VerificationNumberTestWorkflow: VerificationValues(bluetoothAddrPrefix=503C, wifiAddrPrefix=503C, serialNumberLength=12, imei1=123456789012345, imei2=543210987654321)
 
-2024-09-12 18:18:18.783 [JavaFX Application Thread] INFO  PveTec - 
-【IMPORTANT】 TestAreaController: Current test station: Verification_Number
+2024-09-13 00:11:58.582 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers) to StationEnum.SN_WRITER(code=101, name=SN_Writer, description=Station for writing serial numbers)
+2024-09-13 00:11:59.667 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from StationEnum.SN_WRITER(code=101, name=SN_Writer, description=Station for writing serial numbers) to StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers)
+2024-09-13 00:11:59.670 [JavaFX Application Thread] INFO  PveTec - 
+【IMPORTANT】 VerificationNumberTestWorkflow: VerificationValues(bluetoothAddrPrefix=503C, wifiAddrPrefix=503C, serialNumberLength=12, imei1=123456789012345, imei2=543210987654321)
 
-2024-09-12 18:19:28.248 [JavaFX Application Thread] ERROR PveTec - [MainController] 
-/E:/PVT/Project/Inspectra/target/classes/com/pvetec/inspectra/NavigationBar.fxml
+2024-09-13 00:12:02.615 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers) to StationEnum.SN_WRITER(code=101, name=SN_Writer, description=Station for writing serial numbers)
+2024-09-13 00:18:01.602 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from StationEnum.SN_WRITER(code=101, name=SN_Writer, description=Station for writing serial numbers) to StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers)
+2024-09-13 00:18:01.604 [JavaFX Application Thread] INFO  PveTec - 
+【IMPORTANT】 VerificationNumberTestWorkflow: VerificationValues(bluetoothAddrPrefix=503C, wifiAddrPrefix=503C, serialNumberLength=12, imei1=123456789012345, imei2=543210987654321)
 
-2024-09-12 18:20:04.719 [JavaFX Application Thread] INFO  PveTec - 
-【IMPORTANT】 TestAreaController: Current test station: Verification_Number
+2024-09-13 00:18:02.870 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers) to StationEnum.SN_WRITER(code=101, name=SN_Writer, description=Station for writing serial numbers)
+2024-09-13 00:18:03.931 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from StationEnum.SN_WRITER(code=101, name=SN_Writer, description=Station for writing serial numbers) to StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers)
+2024-09-13 00:18:03.934 [JavaFX Application Thread] INFO  PveTec - 
+【IMPORTANT】 VerificationNumberTestWorkflow: VerificationValues(bluetoothAddrPrefix=503C, wifiAddrPrefix=503C, serialNumberLength=12, imei1=123456789012345, imei2=543210987654321)
 
-2024-09-12 18:20:42.395 [JavaFX Application Thread] ERROR PveTec - [MainController] 
-/E:/PVT/Project/Inspectra/target/classes/com/pvetec/inspectra/NavigationBar.fxml
+2024-09-13 00:18:04.860 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers) to StationEnum.SN_WRITER(code=101, name=SN_Writer, description=Station for writing serial numbers)
+2024-09-13 00:18:05.841 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from StationEnum.SN_WRITER(code=101, name=SN_Writer, description=Station for writing serial numbers) to StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers)
+2024-09-13 00:18:05.842 [JavaFX Application Thread] INFO  PveTec - 
+【IMPORTANT】 VerificationNumberTestWorkflow: VerificationValues(bluetoothAddrPrefix=503C, wifiAddrPrefix=503C, serialNumberLength=12, imei1=123456789012345, imei2=543210987654321)
 
-2024-09-12 18:20:49.402 [JavaFX Application Thread] INFO  PveTec - 
-【IMPORTANT】 TestAreaController: Current test station: Verification_Number
+2024-09-13 00:18:07.137 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers) to StationEnum.SN_WRITER(code=101, name=SN_Writer, description=Station for writing serial numbers)
+2024-09-13 00:18:08.472 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from StationEnum.SN_WRITER(code=101, name=SN_Writer, description=Station for writing serial numbers) to StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers)
+2024-09-13 00:18:08.473 [JavaFX Application Thread] INFO  PveTec - 
+【IMPORTANT】 VerificationNumberTestWorkflow: VerificationValues(bluetoothAddrPrefix=503C, wifiAddrPrefix=503C, serialNumberLength=12, imei1=123456789012345, imei2=543210987654321)
 
-2024-09-12 18:20:51.473 [JavaFX Application Thread] ERROR PveTec - [MainController] 
-/E:/PVT/Project/Inspectra/target/classes/com/pvetec/inspectra/NavigationBar.fxml
+2024-09-13 00:18:11.078 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers) to StationEnum.SN_WRITER(code=101, name=SN_Writer, description=Station for writing serial numbers)
+2024-09-13 00:18:12.482 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from StationEnum.SN_WRITER(code=101, name=SN_Writer, description=Station for writing serial numbers) to StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers)
+2024-09-13 00:18:12.483 [JavaFX Application Thread] INFO  PveTec - 
+【IMPORTANT】 VerificationNumberTestWorkflow: VerificationValues(bluetoothAddrPrefix=503C, wifiAddrPrefix=503C, serialNumberLength=12, imei1=123456789012345, imei2=543210987654321)
 
-2024-09-12 18:21:00.592 [JavaFX Application Thread] INFO  PveTec - 
-【IMPORTANT】 TestAreaController: Current test station: Verification_Number
+2024-09-13 00:18:14.207 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers) to StationEnum.SN_WRITER(code=101, name=SN_Writer, description=Station for writing serial numbers)
+2024-09-13 00:23:05.600 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from StationEnum.SN_WRITER(code=101, name=SN_Writer, description=Station for writing serial numbers) to StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers)
+2024-09-13 00:23:05.603 [JavaFX Application Thread] INFO  PveTec - 
+【IMPORTANT】 VerificationNumberTestWorkflow: VerificationValues(bluetoothAddrPrefix=503C, wifiAddrPrefix=503C, serialNumberLength=12, imei1=123456789012345, imei2=543210987654321)
 
-2024-09-12 18:21:14.335 [JavaFX Application Thread] ERROR PveTec - [MainController] 
-/E:/PVT/Project/Inspectra/target/classes/com/pvetec/inspectra/NavigationBar.fxml
+2024-09-13 00:23:07.979 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers) to StationEnum.SN_WRITER(code=101, name=SN_Writer, description=Station for writing serial numbers)
+2024-09-13 00:23:09.062 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from StationEnum.SN_WRITER(code=101, name=SN_Writer, description=Station for writing serial numbers) to StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers)
+2024-09-13 00:23:09.064 [JavaFX Application Thread] INFO  PveTec - 
+【IMPORTANT】 VerificationNumberTestWorkflow: VerificationValues(bluetoothAddrPrefix=503C, wifiAddrPrefix=503C, serialNumberLength=12, imei1=123456789012345, imei2=543210987654321)
 
-2024-09-12 18:21:19.086 [JavaFX Application Thread] INFO  PveTec - 
-【IMPORTANT】 TestAreaController: Current test station: Verification_Number
+2024-09-13 00:25:04.629 [JavaFX Application Thread] ERROR PveTec - [NavigationBarController] name:SN_Writer
+2024-09-13 00:25:04.630 [JavaFX Application Thread] ERROR PveTec - [NavigationBarController] name:Verification_Number
+2024-09-13 00:25:07.533 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
+2024-09-13 00:25:07.533 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
+2024-09-13 00:25:07.554 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from null to StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers)
+2024-09-13 00:25:07.559 [JavaFX Application Thread] INFO  PveTec - 
+【IMPORTANT】 VerificationNumberTestWorkflow: VerificationValues(bluetoothAddrPrefix=503C, wifiAddrPrefix=503C, serialNumberLength=12, imei1=123456789012345, imei2=543210987654321)
 
-2024-09-12 18:21:46.754 [JavaFX Application Thread] ERROR PveTec - [MainController] 
-/E:/PVT/Project/Inspectra/target/classes/com/pvetec/inspectra/NavigationBar.fxml
+2024-09-13 00:27:16.694 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
+2024-09-13 00:27:16.695 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
+2024-09-13 00:29:26.964 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
+2024-09-13 00:29:26.965 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
+2024-09-13 00:29:26.986 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from null to StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers)
+2024-09-13 00:29:26.990 [JavaFX Application Thread] INFO  PveTec - 
+【IMPORTANT】 VerificationNumberTestWorkflow: VerificationValues(bluetoothAddrPrefix=503C, wifiAddrPrefix=503C, serialNumberLength=12, imei1=123456789012345, imei2=543210987654321)
 
-2024-09-12 18:21:59.614 [JavaFX Application Thread] INFO  PveTec - 
-【IMPORTANT】 TestAreaController: Current test station: Verification_Number
+2024-09-13 00:29:33.562 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers) to StationEnum.SN_WRITER(code=101, name=SN_Writer, description=Station for writing serial numbers)
+2024-09-13 00:29:34.638 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from StationEnum.SN_WRITER(code=101, name=SN_Writer, description=Station for writing serial numbers) to StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers)
+2024-09-13 00:29:34.639 [JavaFX Application Thread] INFO  PveTec - 
+【IMPORTANT】 VerificationNumberTestWorkflow: VerificationValues(bluetoothAddrPrefix=503C, wifiAddrPrefix=503C, serialNumberLength=12, imei1=123456789012345, imei2=543210987654321)
 
-2024-09-12 18:22:00.289 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 18:22:00.289 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 18:22:00.289 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 18:22:00.289 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 18:22:00.289 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 18:22:00.290 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] USB device attached: Bus 001 Device 005: ID 0e8d:201c
-2024-09-12 18:22:00.434 [JavaFX Application Thread] ERROR PveTec - [USBTransmission] Error handling USB device attachment: USB error 3: Can't open device Bus 001 Device 005: ID 0e8d:201c: Access denied (insufficient permissions)
-2024-09-12 18:22:00.445 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 18:22:00.445 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 18:22:00.445 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
-2024-09-12 18:22:01.266 [JavaFX Application Thread] ERROR PveTec - [VerificationNumberTestWorkflow] Starting Verification Number test...
-2024-09-12 18:22:03.944 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] USB device detached: Bus 001 Device 005: ID 0e8d:201c
-2024-09-12 18:22:03.944 [usb4java Device Scanner] WARN  PveTec - [USBTransmission] USB interface disconnected, unable to release interface: null
-2024-09-12 18:22:03.944 [JavaFX Application Thread] ERROR PveTec - [VerificationNumberTestWorkflow] Resetting test...
-2024-09-12 18:22:03.944 [JavaFX Application Thread] ERROR PveTec - [VerificationNumberTestWorkflow] Test has been reset.
-2024-09-12 18:22:05.581 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] USB device attached: Bus 001 Device 005: ID 0e8d:201c
-2024-09-12 18:22:05.702 [JavaFX Application Thread] ERROR PveTec - [VerificationNumberTestWorkflow] Starting Verification Number test...
-2024-09-12 18:22:05.726 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] USB device initialized successfully.
-2024-09-12 18:54:20.849 [JavaFX Application Thread] INFO  PveTec - 
-【IMPORTANT】 TestAreaController: Current test station: Verification_Number
+2024-09-13 00:39:08.171 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
+2024-09-13 00:39:08.172 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
+2024-09-13 00:39:08.189 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from null to StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers)
+2024-09-13 00:39:08.194 [JavaFX Application Thread] INFO  PveTec - 
+【IMPORTANT】 VerificationNumberTestWorkflow: VerificationValues(bluetoothAddrPrefix=503C, wifiAddrPrefix=503C, serialNumberLength=12, imei1=123456789012345, imei2=543210987654321)
 
-2024-09-12 18:54:20.861 [JavaFX Application Thread] ERROR PveTec - [MainController] 
-/E:/PVT/Project/Inspectra/target/classes/com/pvetec/inspectra/TestArea.fxml
+2024-09-13 00:39:12.798 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers) to StationEnum.SN_WRITER(code=101, name=SN_Writer, description=Station for writing serial numbers)
+2024-09-13 00:39:14.036 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from StationEnum.SN_WRITER(code=101, name=SN_Writer, description=Station for writing serial numbers) to StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers)
+2024-09-13 00:39:14.038 [JavaFX Application Thread] INFO  PveTec - 
+【IMPORTANT】 VerificationNumberTestWorkflow: VerificationValues(bluetoothAddrPrefix=503C, wifiAddrPrefix=503C, serialNumberLength=12, imei1=123456789012345, imei2=543210987654321)
 
-2024-09-12 18:54:21.358 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 18:54:21.358 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 18:54:21.358 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 18:54:21.358 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 18:54:21.358 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 18:54:21.359 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] USB device attached: Bus 001 Device 005: ID 0e8d:201c
-2024-09-12 18:54:21.466 [JavaFX Application Thread] ERROR PveTec - [USBTransmission] Error handling USB device attachment: USB error 3: Can't open device Bus 001 Device 005: ID 0e8d:201c: Access denied (insufficient permissions)
-2024-09-12 18:54:21.466 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 18:54:21.466 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 18:54:21.466 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
-2024-09-12 18:54:52.376 [JavaFX Application Thread] INFO  PveTec - 
-【IMPORTANT】 TestAreaController: Current test station: Verification_Number
+2024-09-13 00:48:15.821 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
+2024-09-13 00:48:15.822 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
+2024-09-13 00:48:15.837 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from 0 to 102
+2024-09-13 00:48:55.732 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
+2024-09-13 00:48:55.733 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
+2024-09-13 00:48:55.752 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from 0 to 102
+2024-09-13 00:49:26.109 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
+2024-09-13 00:49:26.109 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
+2024-09-13 00:49:26.124 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from 0 to 102
+2024-09-13 00:49:26.130 [JavaFX Application Thread] INFO  PveTec - 
+【IMPORTANT】 VerificationNumberTestWorkflow: VerificationValues(bluetoothAddrPrefix=503C, wifiAddrPrefix=503C, serialNumberLength=12, imei1=123456789012345, imei2=543210987654321)
 
-2024-09-12 18:55:09.158 [JavaFX Application Thread] ERROR PveTec - [MainController] 
-/E:/PVT/Project/Inspectra/target/classes/com/pvetec/inspectra/TestArea.fxml
+2024-09-13 00:49:30.033 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from 102 to 101
+2024-09-13 00:49:31.134 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from 101 to 102
+2024-09-13 00:49:31.136 [JavaFX Application Thread] INFO  PveTec - 
+【IMPORTANT】 VerificationNumberTestWorkflow: VerificationValues(bluetoothAddrPrefix=503C, wifiAddrPrefix=503C, serialNumberLength=12, imei1=123456789012345, imei2=543210987654321)
 
-2024-09-12 18:55:15.473 [JavaFX Application Thread] INFO  PveTec - 
-【IMPORTANT】 TestAreaController: Current test station: Verification_Number
+2024-09-13 00:49:32.007 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from 102 to 101
+2024-09-13 00:55:59.017 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
+2024-09-13 00:55:59.033 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from 0 to 102
+2024-09-13 00:55:59.038 [JavaFX Application Thread] INFO  PveTec - 
+【IMPORTANT】 VerificationNumberTestWorkflow: VerificationValues(bluetoothAddrPrefix=503C, wifiAddrPrefix=503C, serialNumberLength=12, imei1=123456789012345, imei2=543210987654321)
 
-2024-09-12 18:55:26.508 [JavaFX Application Thread] ERROR PveTec - [MainController] 
-/E:/PVT/Project/Inspectra/target/classes/com/pvetec/inspectra/TestArea.fxml
+2024-09-13 00:56:34.817 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
+2024-09-13 00:56:34.833 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from 0 to 102
+2024-09-13 00:56:34.838 [JavaFX Application Thread] INFO  PveTec - 
+【IMPORTANT】 VerificationNumberTestWorkflow: VerificationValues(bluetoothAddrPrefix=503C, wifiAddrPrefix=503C, serialNumberLength=12, imei1=123456789012345, imei2=543210987654321)
 
-2024-09-12 18:55:31.805 [JavaFX Application Thread] INFO  PveTec - 
-【IMPORTANT】 TestAreaController: Current test station: Verification_Number
+2024-09-13 00:56:44.684 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from 102 to 101
+2024-09-13 00:56:46.024 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from 101 to 102
+2024-09-13 00:56:46.026 [JavaFX Application Thread] INFO  PveTec - 
+【IMPORTANT】 VerificationNumberTestWorkflow: VerificationValues(bluetoothAddrPrefix=503C, wifiAddrPrefix=503C, serialNumberLength=12, imei1=123456789012345, imei2=543210987654321)
 
-2024-09-12 18:56:14.031 [JavaFX Application Thread] ERROR PveTec - [MainController] 
-/E:/PVT/Project/Inspectra/target/classes/com/pvetec/inspectra/TestArea.fxml
+2024-09-13 01:01:11.306 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
+2024-09-13 01:01:11.326 [JavaFX Application Thread] INFO  PveTec - 
+【IMPORTANT】 TestAreaController: Station changed from 0 to 102
 
-2024-09-12 18:56:19.670 [JavaFX Application Thread] INFO  PveTec - 
-【IMPORTANT】 TestAreaController: Current test station: Verification_Number
+2024-09-13 01:01:11.332 [JavaFX Application Thread] INFO  PveTec - 
+【IMPORTANT】 VerificationNumberTestWorkflow: VerificationValues(bluetoothAddrPrefix=503C, wifiAddrPrefix=503C, serialNumberLength=12, imei1=123456789012345, imei2=543210987654321)
 
-2024-09-12 18:56:28.929 [JavaFX Application Thread] ERROR PveTec - [MainController] 
-/E:/PVT/Project/Inspectra/target/classes/com/pvetec/inspectra/TestArea.fxml
+2024-09-13 01:01:18.950 [JavaFX Application Thread] INFO  PveTec - 
+【IMPORTANT】 TestAreaController: Station changed from 102 to 101
 
-2024-09-12 18:56:35.284 [JavaFX Application Thread] INFO  PveTec - 
-【IMPORTANT】 TestAreaController: Current test station: Verification_Number
+2024-09-13 01:01:20.066 [JavaFX Application Thread] INFO  PveTec - 
+【IMPORTANT】 TestAreaController: Station changed from 101 to 102
 
-2024-09-12 18:56:51.915 [JavaFX Application Thread] ERROR PveTec - [MainController] 
-/E:/PVT/Project/Inspectra/target/classes/com/pvetec/inspectra/TestArea.fxml
+2024-09-13 01:01:20.068 [JavaFX Application Thread] INFO  PveTec - 
+【IMPORTANT】 VerificationNumberTestWorkflow: VerificationValues(bluetoothAddrPrefix=503C, wifiAddrPrefix=503C, serialNumberLength=12, imei1=123456789012345, imei2=543210987654321)
 
-2024-09-12 18:57:00.257 [JavaFX Application Thread] INFO  PveTec - 
-【IMPORTANT】 TestAreaController: Current test station: Verification_Number
+2024-09-13 01:01:57.620 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
+2024-09-13 01:01:57.636 [JavaFX Application Thread] INFO  PveTec - 
+【IMPORTANT】 TestAreaController: Station changed from 0 to 102
 
-2024-09-12 18:57:00.762 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 18:57:00.762 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 18:57:00.762 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 18:57:00.762 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 18:57:00.762 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 18:57:00.763 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] USB device attached: Bus 001 Device 005: ID 0e8d:201c
-2024-09-12 18:57:00.871 [JavaFX Application Thread] ERROR PveTec - [USBTransmission] Error handling USB device attachment: USB error 3: Can't open device Bus 001 Device 005: ID 0e8d:201c: Access denied (insufficient permissions)
-2024-09-12 18:57:00.871 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 18:57:00.871 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 18:57:00.871 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
-2024-09-12 18:57:05.418 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] USB device detached: Bus 001 Device 005: ID 0e8d:201c
-2024-09-12 18:57:05.419 [usb4java Device Scanner] WARN  PveTec - [USBTransmission] USB interface disconnected, unable to release interface: null
-2024-09-12 18:57:07.026 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] USB device attached: Bus 001 Device 005: ID 0e8d:201c
-2024-09-12 18:57:07.151 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] USB device initialized successfully.
-2024-09-12 18:57:09.137 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from null to StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers)
-2024-09-12 18:57:10.093 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers) to StationEnum.SN_WRITER(code=101, name=SN_Writer, description=Station for writing serial numbers)
-2024-09-12 18:57:10.980 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from StationEnum.SN_WRITER(code=101, name=SN_Writer, description=Station for writing serial numbers) to StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers)
-2024-09-12 18:57:12.084 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers) to StationEnum.SN_WRITER(code=101, name=SN_Writer, description=Station for writing serial numbers)
-2024-09-12 18:57:13.066 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from StationEnum.SN_WRITER(code=101, name=SN_Writer, description=Station for writing serial numbers) to StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers)
-2024-09-12 18:57:13.900 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers) to StationEnum.SN_WRITER(code=101, name=SN_Writer, description=Station for writing serial numbers)
-2024-09-12 18:57:14.699 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from StationEnum.SN_WRITER(code=101, name=SN_Writer, description=Station for writing serial numbers) to StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers)
-2024-09-12 19:06:41.930 [JavaFX Application Thread] INFO  PveTec - 
-【IMPORTANT】 NavigationBarController: Current test station: Verification_Number
+2024-09-13 01:01:57.641 [JavaFX Application Thread] INFO  PveTec - 
+【IMPORTANT】 VerificationNumberTestWorkflow: VerificationValues(bluetoothAddrPrefix=503C, wifiAddrPrefix=503C, serialNumberLength=12, imei1=123456789012345, imei2=543210987654321)
 
-2024-09-12 19:06:41.941 [JavaFX Application Thread] ERROR PveTec - [MainController] 
-/E:/PVT/Project/Inspectra/target/classes/com/pvetec/inspectra/NavigationBar.fxml
+2024-09-13 01:02:44.590 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
+2024-09-13 01:02:44.609 [JavaFX Application Thread] INFO  PveTec - 
+【IMPORTANT】 TestAreaController: Station changed from 0 to 102
 
-2024-09-12 19:06:56.868 [JavaFX Application Thread] INFO  PveTec - 
-【IMPORTANT】 NavigationBarController: Current test station: Verification_Number
+2024-09-13 01:02:44.615 [JavaFX Application Thread] INFO  PveTec - 
+【IMPORTANT】 VerificationNumberTestWorkflow: VerificationValues(bluetoothAddrPrefix=503C, wifiAddrPrefix=503C, serialNumberLength=12, imei1=123456789012345, imei2=543210987654321)
 
-2024-09-12 19:07:18.508 [JavaFX Application Thread] ERROR PveTec - [MainController] 
-/E:/PVT/Project/Inspectra/target/classes/com/pvetec/inspectra/NavigationBar.fxml
+2024-09-13 01:05:00.622 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
+2024-09-13 01:05:00.638 [JavaFX Application Thread] INFO  PveTec - 
+【IMPORTANT】 TestAreaController: Station changed from 0 to 102
 
-2024-09-12 19:07:26.880 [JavaFX Application Thread] INFO  PveTec - 
-【IMPORTANT】 NavigationBarController: Current test station: Verification_Number
+2024-09-13 01:05:00.643 [JavaFX Application Thread] INFO  PveTec - 
+【IMPORTANT】 VerificationNumberTestWorkflow: VerificationValues(bluetoothAddrPrefix=503C, wifiAddrPrefix=503C, serialNumberLength=12, imei1=123456789012345, imei2=543210987654321)
 
-2024-09-12 19:09:01.113 [JavaFX Application Thread] ERROR PveTec - [MainController] 
-/E:/PVT/Project/Inspectra/target/classes/com/pvetec/inspectra/NavigationBar.fxml
-
-2024-09-12 19:12:55.753 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:12:55.754 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:12:55.755 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:12:55.755 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:12:55.755 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:12:55.756 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] USB device attached: Bus 001 Device 005: ID 0e8d:201c
-2024-09-12 19:12:55.865 [JavaFX Application Thread] ERROR PveTec - [USBTransmission] Error handling USB device attachment: USB error 3: Can't open device Bus 001 Device 005: ID 0e8d:201c: Access denied (insufficient permissions)
-2024-09-12 19:12:55.865 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:12:55.865 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:12:55.865 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
-2024-09-12 19:13:18.756 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:13:18.758 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:13:18.758 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:13:18.758 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:13:18.758 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:13:18.759 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] USB device attached: Bus 001 Device 005: ID 0e8d:201c
-2024-09-12 19:13:18.867 [JavaFX Application Thread] ERROR PveTec - [USBTransmission] Error handling USB device attachment: USB error 3: Can't open device Bus 001 Device 005: ID 0e8d:201c: Access denied (insufficient permissions)
-2024-09-12 19:13:18.867 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:13:18.867 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:13:18.867 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
-2024-09-12 19:13:21.175 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers) to StationEnum.SN_WRITER(code=101, name=SN_Writer, description=Station for writing serial numbers)
-2024-09-12 19:13:22.332 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from StationEnum.SN_WRITER(code=101, name=SN_Writer, description=Station for writing serial numbers) to StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers)
-2024-09-12 19:13:35.663 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:13:35.666 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:13:35.666 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:13:35.667 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:13:35.667 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:13:35.668 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] USB device attached: Bus 001 Device 005: ID 0e8d:201c
-2024-09-12 19:13:35.804 [usb4java Device Scanner] ERROR PveTec - [USBTransmission] Error handling USB device attachment: USB error 3: Can't open device Bus 001 Device 005: ID 0e8d:201c: Access denied (insufficient permissions)
-2024-09-12 19:13:35.804 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:13:35.804 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:13:35.824 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
-2024-09-12 19:15:43.862 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:15:43.864 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:15:43.864 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:15:43.864 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:15:43.865 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:15:43.865 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] USB device attached: Bus 001 Device 005: ID 0e8d:201c
-2024-09-12 19:15:43.987 [JavaFX Application Thread] ERROR PveTec - [USBTransmission] Error handling USB device attachment: USB error 3: Can't open device Bus 001 Device 005: ID 0e8d:201c: Access denied (insufficient permissions)
-2024-09-12 19:15:43.988 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:15:43.988 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:15:43.988 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
-2024-09-12 19:16:41.896 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers) to StationEnum.SN_WRITER(code=101, name=SN_Writer, description=Station for writing serial numbers)
-2024-09-12 19:16:42.755 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from StationEnum.SN_WRITER(code=101, name=SN_Writer, description=Station for writing serial numbers) to StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers)
-2024-09-12 19:16:43.619 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers) to StationEnum.SN_WRITER(code=101, name=SN_Writer, description=Station for writing serial numbers)
-2024-09-12 19:17:07.518 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:17:07.519 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:17:07.519 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:17:07.519 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:17:07.519 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:17:07.519 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] USB device attached: Bus 001 Device 005: ID 0e8d:201c
-2024-09-12 19:17:07.612 [JavaFX Application Thread] ERROR PveTec - [USBTransmission] Error handling USB device attachment: USB error 3: Can't open device Bus 001 Device 005: ID 0e8d:201c: Access denied (insufficient permissions)
-2024-09-12 19:17:07.612 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:17:07.612 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:17:07.612 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
-2024-09-12 19:17:07.639 [JavaFX Application Thread] INFO  PveTec - 
-【IMPORTANT】 NavigationBarController: 进入了
-
-2024-09-12 19:20:36.434 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:20:36.435 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:20:36.436 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:20:36.436 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:20:36.436 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:20:36.437 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] USB device attached: Bus 001 Device 005: ID 0e8d:201c
-2024-09-12 19:20:36.548 [JavaFX Application Thread] ERROR PveTec - [USBTransmission] Error handling USB device attachment: USB error 3: Can't open device Bus 001 Device 005: ID 0e8d:201c: Access denied (insufficient permissions)
-2024-09-12 19:20:36.548 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:20:36.548 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:20:36.548 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
-2024-09-12 19:20:43.016 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers) to StationEnum.SN_WRITER(code=101, name=SN_Writer, description=Station for writing serial numbers)
-2024-09-12 19:22:56.870 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:22:56.873 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:22:56.873 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:22:56.873 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:22:56.873 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:22:56.874 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] USB device attached: Bus 001 Device 005: ID 0e8d:201c
-2024-09-12 19:22:56.982 [JavaFX Application Thread] ERROR PveTec - [USBTransmission] Error handling USB device attachment: USB error 3: Can't open device Bus 001 Device 005: ID 0e8d:201c: Access denied (insufficient permissions)
-2024-09-12 19:22:56.982 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:22:56.982 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:22:56.982 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
-2024-09-12 19:23:00.790 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers) to StationEnum.SN_WRITER(code=101, name=SN_Writer, description=Station for writing serial numbers)
-2024-09-12 19:23:01.999 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from StationEnum.SN_WRITER(code=101, name=SN_Writer, description=Station for writing serial numbers) to StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers)
-2024-09-12 19:23:04.071 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers) to StationEnum.SN_WRITER(code=101, name=SN_Writer, description=Station for writing serial numbers)
-2024-09-12 19:23:05.071 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from StationEnum.SN_WRITER(code=101, name=SN_Writer, description=Station for writing serial numbers) to StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers)
-2024-09-12 19:23:42.367 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:23:42.371 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:23:42.371 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:23:42.371 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:23:42.372 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:23:42.372 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] USB device attached: Bus 001 Device 005: ID 0e8d:201c
-2024-09-12 19:23:42.496 [usb4java Device Scanner] ERROR PveTec - [USBTransmission] Error handling USB device attachment: USB error 3: Can't open device Bus 001 Device 005: ID 0e8d:201c: Access denied (insufficient permissions)
-2024-09-12 19:23:42.496 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:23:42.496 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:23:42.517 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
-2024-09-12 19:24:47.484 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:24:47.486 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:24:47.486 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:24:47.487 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:24:47.487 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:24:47.487 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] USB device attached: Bus 001 Device 005: ID 0e8d:201c
-2024-09-12 19:24:47.592 [JavaFX Application Thread] ERROR PveTec - [USBTransmission] Error handling USB device attachment: USB error 3: Can't open device Bus 001 Device 005: ID 0e8d:201c: Access denied (insufficient permissions)
-2024-09-12 19:24:47.592 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:24:47.592 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:24:47.592 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
-2024-09-12 19:24:50.674 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers) to StationEnum.SN_WRITER(code=101, name=SN_Writer, description=Station for writing serial numbers)
-2024-09-12 19:26:28.176 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:26:28.179 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:26:28.180 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:26:28.180 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:26:28.180 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:26:28.181 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] USB device attached: Bus 001 Device 005: ID 0e8d:201c
-2024-09-12 19:26:28.317 [usb4java Device Scanner] ERROR PveTec - [USBTransmission] Error handling USB device attachment: USB error 3: Can't open device Bus 001 Device 005: ID 0e8d:201c: Access denied (insufficient permissions)
-2024-09-12 19:26:28.318 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:26:28.318 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:26:28.345 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
-2024-09-12 19:27:19.333 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:27:19.334 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:27:19.335 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:27:19.335 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:27:19.335 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:27:19.335 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] USB device attached: Bus 001 Device 005: ID 0e8d:201c
-2024-09-12 19:27:19.443 [JavaFX Application Thread] ERROR PveTec - [USBTransmission] Error handling USB device attachment: USB error 3: Can't open device Bus 001 Device 005: ID 0e8d:201c: Access denied (insufficient permissions)
-2024-09-12 19:27:19.443 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:27:19.443 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:27:19.444 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
-2024-09-12 19:27:19.478 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from null to StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers)
-2024-09-12 19:27:24.048 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers) to StationEnum.SN_WRITER(code=101, name=SN_Writer, description=Station for writing serial numbers)
-2024-09-12 19:27:25.035 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from StationEnum.SN_WRITER(code=101, name=SN_Writer, description=Station for writing serial numbers) to StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers)
-2024-09-12 19:27:25.954 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers) to StationEnum.SN_WRITER(code=101, name=SN_Writer, description=Station for writing serial numbers)
-2024-09-12 19:27:26.994 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from StationEnum.SN_WRITER(code=101, name=SN_Writer, description=Station for writing serial numbers) to StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers)
-2024-09-12 19:31:29.858 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:31:29.860 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:31:29.860 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:31:29.860 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:31:29.860 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:31:29.860 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] USB device attached: Bus 001 Device 005: ID 0e8d:201c
-2024-09-12 19:31:29.958 [JavaFX Application Thread] ERROR PveTec - [USBTransmission] Error handling USB device attachment: USB error 3: Can't open device Bus 001 Device 005: ID 0e8d:201c: Access denied (insufficient permissions)
-2024-09-12 19:31:29.959 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:31:29.959 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] Connected USB device is not an Android device.
-2024-09-12 19:31:29.959 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
-2024-09-12 19:31:29.990 [JavaFX Application Thread] ERROR PveTec - [TestAreaController] Station changed from null to StationEnum.VERIFICATION_NUMBER(code=102, name=Verification_Number, description=Station for verifying numbers)
-2024-09-12 19:31:30.581 [JavaFX Application Thread] ERROR PveTec - [VerificationNumberTestWorkflow] Starting Verification Number test...
-2024-09-12 19:31:33.252 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] USB device detached: Bus 001 Device 005: ID 0e8d:201c
-2024-09-12 19:31:33.252 [usb4java Device Scanner] WARN  PveTec - [USBTransmission] USB interface disconnected, unable to release interface: null
-2024-09-12 19:31:33.252 [JavaFX Application Thread] ERROR PveTec - [VerificationNumberTestWorkflow] Resetting test...
-2024-09-12 19:31:33.252 [JavaFX Application Thread] ERROR PveTec - [VerificationNumberTestWorkflow] Test has been reset.
-2024-09-12 19:31:34.859 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] USB device attached: Bus 001 Device 005: ID 0e8d:201c
-2024-09-12 19:31:34.970 [JavaFX Application Thread] ERROR PveTec - [VerificationNumberTestWorkflow] Starting Verification Number test...
-2024-09-12 19:31:34.997 [usb4java Device Scanner] ERROR PveTec - [USBTransmission] Error handling USB device attachment: USB error 3: Can't open device Bus 001 Device 005: ID 0e8d:201c: Access denied (insufficient permissions)
-2024-09-12 19:31:36.048 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] USB device detached: Bus 001 Device 005: ID 0e8d:201c
-2024-09-12 19:31:36.048 [usb4java Device Scanner] WARN  PveTec - [USBTransmission] USB interface disconnected, unable to release interface: null
-2024-09-12 19:31:36.050 [JavaFX Application Thread] ERROR PveTec - [VerificationNumberTestWorkflow] Resetting test...
-2024-09-12 19:31:36.050 [JavaFX Application Thread] ERROR PveTec - [VerificationNumberTestWorkflow] Test has been reset.
-2024-09-12 19:31:39.187 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] USB device attached: Bus 001 Device 005: ID 0e8d:201c
-2024-09-12 19:31:39.250 [JavaFX Application Thread] ERROR PveTec - [VerificationNumberTestWorkflow] Starting Verification Number test...
-2024-09-12 19:31:39.266 [usb4java Device Scanner] INFO  PveTec - [USBTransmission] USB device initialized successfully.
+2024-09-13 01:05:26.476 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
+2024-09-13 01:05:26.493 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [TestAreaController] Station changed from 0 to 102
+2024-09-13 01:05:26.498 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [VerificationNumberTestWorkflow] VerificationValues(bluetoothAddrPrefix=503C, wifiAddrPrefix=503C, serialNumberLength=12, imei1=123456789012345, imei2=543210987654321)
+2024-09-13 01:05:47.466 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [TestAreaController] Station changed from 102 to 101
+2024-09-13 01:05:55.380 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [TestAreaController] Station changed from 101 to 102
+2024-09-13 01:05:55.382 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [VerificationNumberTestWorkflow] VerificationValues(bluetoothAddrPrefix=503C, wifiAddrPrefix=503C, serialNumberLength=12, imei1=123456789012345, imei2=543210987654321)
+2024-09-13 01:06:52.812 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
+2024-09-13 01:06:52.833 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [TestAreaController] Station changed from 0 to 102
+2024-09-13 01:06:55.633 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [VerificationNumberTestWorkflow] VerificationValues(bluetoothAddrPrefix=503C, wifiAddrPrefix=503C, serialNumberLength=12, imei1=123456789012345, imei2=543210987654321)
+2024-09-13 01:07:06.271 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [TestAreaController] Station changed from 102 to 101
+2024-09-13 01:07:11.003 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [TestAreaController] Station changed from 101 to 102
+2024-09-13 01:07:11.005 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [VerificationNumberTestWorkflow] VerificationValues(bluetoothAddrPrefix=503C, wifiAddrPrefix=503C, serialNumberLength=12, imei1=123456789012345, imei2=543210987654321)
+2024-09-13 01:07:34.480 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
+2024-09-13 01:07:34.504 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [TestAreaController] Station changed from 0 to 102
+2024-09-13 01:07:34.509 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [VerificationNumberTestWorkflow] VerificationValues(bluetoothAddrPrefix=503C, wifiAddrPrefix=503C, serialNumberLength=12, imei1=123456789012345, imei2=543210987654321)
+2024-09-13 01:07:41.060 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [TestAreaController] Station changed from 102 to 101
+2024-09-13 01:16:10.366 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
+2024-09-13 01:16:10.382 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [TestAreaController] Station changed from 0 to 102
+2024-09-13 01:16:10.389 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [VerificationNumberTestWorkflow] VerificationValues(bluetoothAddrPrefix=503C, wifiAddrPrefix=503C, serialNumberLength=12, imei1=123456789012345, imei2=543210987654321)
+2024-09-13 01:16:35.741 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
+2024-09-13 01:16:35.757 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [TestAreaController] Station changed from 0 to 102
+2024-09-13 01:16:35.762 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [VerificationNumberTestWorkflow] VerificationValues(bluetoothAddrPrefix=503C, wifiAddrPrefix=503C, serialNumberLength=12, imei1=123456789012345, imei2=543210987654321)
+2024-09-13 01:17:15.922 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
+2024-09-13 01:17:15.937 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [TestAreaController] Station changed from 0 to 102
+2024-09-13 01:17:15.942 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [VerificationNumberTestWorkflow] VerificationValues(bluetoothAddrPrefix=503C, wifiAddrPrefix=503C, serialNumberLength=12, imei1=123456789012345, imei2=543210987654321)
+2024-09-13 01:19:02.433 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
+2024-09-13 01:19:02.450 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [TestAreaController] Station changed from 0 to 102
+2024-09-13 01:19:02.457 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [VerificationNumberTestWorkflow] VerificationValues(bluetoothAddrPrefix=503C, wifiAddrPrefix=503C, serialNumberLength=12, imei1=123456789012345, imei2=543210987654321)
+2024-09-13 01:22:06.542 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
+2024-09-13 01:22:06.561 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [TestAreaController] Station changed from 0 to 102
+2024-09-13 01:22:06.567 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [VerificationNumberTestWorkflow] VerificationValues(bluetoothAddrPrefix=503C, wifiAddrPrefix=503C, serialNumberLength=12, imei1=123456789012345, imei2=543210987654321)
+2024-09-13 01:22:40.355 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
+2024-09-13 01:22:40.372 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [TestAreaController] Station changed from 0 to 102
+2024-09-13 01:22:40.378 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [VerificationNumberTestWorkflow] VerificationValues(bluetoothAddrPrefix=503C, wifiAddrPrefix=503C, serialNumberLength=12, imei1=123456789012345, imei2=543210987654321)
+2024-09-13 01:23:35.467 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
+2024-09-13 01:23:35.483 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [TestAreaController] Station changed from 0 to 102
+2024-09-13 01:23:35.488 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [VerificationNumberTestWorkflow] VerificationValues(bluetoothAddrPrefix=503C, wifiAddrPrefix=503C, serialNumberLength=12, imei1=123456789012345, imei2=543210987654321)
+2024-09-13 01:24:21.248 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
+2024-09-13 01:24:21.268 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [TestAreaController] Station changed from 0 to 102
+2024-09-13 01:24:21.274 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [VerificationNumberTestWorkflow] VerificationValues(bluetoothAddrPrefix=503C, wifiAddrPrefix=503C, serialNumberLength=12, imei1=123456789012345, imei2=543210987654321)
+2024-09-13 01:24:47.626 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
+2024-09-13 01:24:47.642 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [TestAreaController] Station changed from 0 to 102
+2024-09-13 01:24:47.647 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [VerificationNumberTestWorkflow] VerificationValues(bluetoothAddrPrefix=503C, wifiAddrPrefix=503C, serialNumberLength=12, imei1=123456789012345, imei2=543210987654321)
+2024-09-13 01:26:57.150 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
+2024-09-13 01:26:57.166 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [TestAreaController] Station changed from 0 to 102
+2024-09-13 01:26:57.171 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [VerificationNumberTestWorkflow] VerificationValues(bluetoothAddrPrefix=503C, wifiAddrPrefix=503C, serialNumberLength=12, imei1=123456789012345, imei2=543210987654321)
+2024-09-13 01:28:18.910 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
+2024-09-13 01:28:18.926 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [TestAreaController] Station changed from 0 to 102
+2024-09-13 01:28:18.931 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [VerificationNumberTestWorkflow] VerificationValues(bluetoothAddrPrefix=503C, wifiAddrPrefix=503C, serialNumberLength=12, imei1=123456789012345, imei2=543210987654321)
+2024-09-13 01:29:39.547 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
+2024-09-13 01:29:39.564 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [TestAreaController] Station changed from 0 to 102
+2024-09-13 01:29:39.568 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [VerificationNumberTestWorkflow] VerificationValues(bluetoothAddrPrefix=503C, wifiAddrPrefix=503C, serialNumberLength=12, imei1=123456789012345, imei2=543210987654321)
+2024-09-13 01:30:17.652 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
+2024-09-13 01:30:17.669 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [TestAreaController] Station changed from 0 to 102
+2024-09-13 01:30:17.674 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [VerificationNumberTestWorkflow] VerificationValues(bluetoothAddrPrefix=503C, wifiAddrPrefix=503C, serialNumberLength=12, imei1=123456789012345, imei2=543210987654321)
+2024-09-13 01:31:46.286 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
+2024-09-13 01:31:46.305 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [TestAreaController] Station changed from 0 to 102
+2024-09-13 01:31:46.310 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [VerificationNumberTestWorkflow] VerificationValues(bluetoothAddrPrefix=503C, wifiAddrPrefix=503C, serialNumberLength=12, imei1=123456789012345, imei2=543210987654321)
+2024-09-13 01:32:50.521 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
+2024-09-13 01:32:50.537 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [TestAreaController] Station changed from 0 to 102
+2024-09-13 01:32:50.542 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [VerificationNumberTestWorkflow] VerificationValues(bluetoothAddrPrefix=503C, wifiAddrPrefix=503C, serialNumberLength=12, imei1=123456789012345, imei2=543210987654321)
+2024-09-13 01:33:22.589 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
+2024-09-13 01:33:22.605 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [TestAreaController] Station changed from 0 to 102
+2024-09-13 01:33:22.610 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [VerificationNumberTestWorkflow] VerificationValues(bluetoothAddrPrefix=503C, wifiAddrPrefix=503C, serialNumberLength=12, imei1=123456789012345, imei2=543210987654321)
+2024-09-13 01:34:02.944 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
+2024-09-13 01:34:02.961 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [TestAreaController] Station changed from 0 to 102
+2024-09-13 01:34:02.968 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [VerificationNumberTestWorkflow] VerificationValues(bluetoothAddrPrefix=503C, wifiAddrPrefix=503C, serialNumberLength=12, imei1=123456789012345, imei2=543210987654321)
+2024-09-13 01:36:13.145 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
+2024-09-13 01:36:13.164 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [TestAreaController] Station changed from 0 to 102
+2024-09-13 01:36:13.170 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [VerificationNumberTestWorkflow] VerificationValues(bluetoothAddrPrefix=503C, wifiAddrPrefix=503C, serialNumberLength=12, imei1=123456789012345, imei2=543210987654321)
+2024-09-13 01:36:38.380 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
+2024-09-13 01:36:38.396 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [TestAreaController] Station changed from 0 to 102
+2024-09-13 01:36:38.402 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [VerificationNumberTestWorkflow] VerificationValues(bluetoothAddrPrefix=503C, wifiAddrPrefix=503C, serialNumberLength=12, imei1=123456789012345, imei2=543210987654321)
+2024-09-13 01:38:50.648 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
+2024-09-13 01:38:50.666 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [TestAreaController] Station changed from 0 to 102
+2024-09-13 01:38:50.671 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [VerificationNumberTestWorkflow] VerificationValues(bluetoothAddrPrefix=503C, wifiAddrPrefix=503C, serialNumberLength=12, imei1=123456789012345, imei2=543210987654321)
+2024-09-13 01:39:36.190 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
+2024-09-13 01:39:36.206 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [TestAreaController] Station changed from 0 to 102
+2024-09-13 01:39:36.212 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [VerificationNumberTestWorkflow] VerificationValues(bluetoothAddrPrefix=503C, wifiAddrPrefix=503C, serialNumberLength=12, imei1=123456789012345, imei2=543210987654321)
+2024-09-13 01:40:54.608 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
+2024-09-13 01:40:54.624 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [TestAreaController] Station changed from 0 to 102
+2024-09-13 01:40:54.629 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [VerificationNumberTestWorkflow] VerificationValues(bluetoothAddrPrefix=503C, wifiAddrPrefix=503C, serialNumberLength=12, imei1=123456789012345, imei2=543210987654321)
+2024-09-13 01:42:19.262 [JavaFX Application Thread] INFO  PveTec - [USBTransmission] No Android device found initially.
+2024-09-13 01:42:19.282 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [TestAreaController] Station changed from 0 to 102
+2024-09-13 01:42:19.287 [JavaFX Application Thread] INFO  PveTec - IMPORTANT: [VerificationNumberTestWorkflow] VerificationValues(bluetoothAddrPrefix=503C, wifiAddrPrefix=503C, serialNumberLength=12, imei1=123456789012345, imei2=543210987654321)

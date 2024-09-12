@@ -39,6 +39,6 @@ public class LogUtil {
     }
 
     private static String formatHighlightedMessage(String tag, String message) {
-        return String.format("\n【IMPORTANT】 %s: %s\n", tag, message);
+        return String.format("IMPORTANT: [%s] %s", tag, message);
     }
 }

@@ -3,9 +3,11 @@ package com.pvetec.inspectra.ui;
 import com.pvetec.inspectra.constants.FilePathConstant;
 import com.pvetec.inspectra.enums.TestStatus;
 import com.pvetec.inspectra.interfaces.StationTestWorkflow;
+import com.pvetec.inspectra.manager.ConfigManager;
 import com.pvetec.inspectra.pojo.CurrentTest;
 import com.pvetec.inspectra.pojo.TestItem;
 import com.pvetec.inspectra.pojo.TestItemView;
+import com.pvetec.inspectra.pojo.VerificationValues;
 import com.pvetec.inspectra.utils.ADBUtil;
 import com.pvetec.inspectra.utils.JsonBeanConverter;
 import com.pvetec.inspectra.utils.LogUtil;
@@ -67,6 +69,8 @@ public class VerificationNumberTestWorkflow implements StationTestWorkflow {
 
     @Override
     public void createTestArea(VBox vbox) {
+        VerificationValues verificationValues = ConfigManager.getVerificationValues();
+        LogUtil.highlight(TAG, verificationValues.toString());
         // Clear existing content in the VBox
         vbox.getChildren().clear();
 
@@ -98,50 +102,44 @@ public class VerificationNumberTestWorkflow implements StationTestWorkflow {
     }
 
     private void createVerificationNumberForm(VBox vbox) {
-        // Create a form layout
-        VBox formVBox = new VBox(10.0);
-        formVBox.setPadding(new javafx.geometry.Insets(10));
+        // Create a form layout with padding and spacing for better appearance
+        VBox formVBox = new VBox(15.0);
+        formVBox.setPadding(new javafx.geometry.Insets(20));
+        formVBox.setStyle("-fx-background-color: #f0f0f0; -fx-border-radius: 10; -fx-padding: 15;");
 
-        // Create and add Verification Number input
-        HBox verificationNumberHBox = new HBox(10.0);
-        Label verificationNumberLabel = new Label("Verification Number:");
-        TextField verificationNumberField = new TextField();
-        verificationNumberField.setPromptText("Enter Verification Number");
-        verificationNumberHBox.getChildren().addAll(verificationNumberLabel, verificationNumberField);
+        // Create a styled title for the test form
+        Label titleLabel = new Label("Verification Number Test");
+        titleLabel.setStyle("-fx-font-size: 18px; -fx-font-weight: bold;");
 
-        // Create and add Submit Button
-        Button submitButton = new Button("Submit");
-        submitButton.setOnAction(event -> handleSubmit(verificationNumberField.getText()));
-
-        // Create and add Start Test Button
-        Button startTestButton = new Button("Start Test");
-        startTestButton.setOnAction(event -> startTest());
-
-        // Add all components to the form VBox
-        formVBox.getChildren().addAll(verificationNumberHBox, submitButton, startTestButton);
+        formVBox.getChildren().add(titleLabel);
 
         // Add test items details to the form VBox
         for (TestItemView testItemView : testItemViews.values()) {
             TestItem item = testItemView.getTestItem();
             HBox itemHBox = new HBox(10.0);
+            itemHBox.setStyle("-fx-padding: 10; -fx-border-radius: 5; -fx-background-color: #ffffff;");
+
+            Label nameLabel = new Label(item.getName());
+            nameLabel.setStyle("-fx-font-weight: bold;");
+
             Label descriptionLabel = new Label("Description: " + item.getDescription());
             Label resultLabel = new Label("Result: " + (item.getResult() != null ? item.getResult() : "N/A"));
             Label statusLabel = new Label("Status:");
             statusLabel.setGraphic(testItemView.getResultCircle());
 
-            itemHBox.getChildren().addAll(testItemView.getNameJLabel(), descriptionLabel, resultLabel, statusLabel);
+            itemHBox.getChildren().addAll(nameLabel, descriptionLabel, resultLabel, statusLabel);
             formVBox.getChildren().add(itemHBox);
         }
 
+        // Create and add Start Test Button with improved styling
+        Button startTestButton = new Button("Start Test");
+        startTestButton.setStyle("-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-size: 16px;");
+        startTestButton.setOnAction(event -> startTest());
+
+        formVBox.getChildren().add(startTestButton);
+
         // Add form VBox to the main VBox
         vbox.getChildren().add(formVBox);
-    }
-
-    private void handleSubmit(String verificationNumber) {
-        // Handle the form submission
-        LogUtil.e(TAG, "Verification Number: " + verificationNumber);
-
-        // Implement logic to read the actual number from the device using ADB
     }
 
     private TestStatus determineStatus(String result) {

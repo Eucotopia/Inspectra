@@ -14,7 +14,6 @@ import lombok.ToString;
 public enum VerificationNumber {
     BLUETOOTH_ADDRESS("Bluetooth Address", 1),
     WIFI_ADDRESS("WiFi Address", 2),
-    MAC_ADDRESS("MAC Address", 3),
     SERIAL_NUMBER("Serial Number", 4),
     DEVICE_ID("Device ID", 5),
     IMEI_1("IMEI_1", 6),

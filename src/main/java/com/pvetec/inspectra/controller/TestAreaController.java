@@ -18,8 +18,6 @@ public class TestAreaController {
 
     private SharedData sharedData;
 
-    StationEnum stationEnum = null;
-
     private WorkFlowManager workFlowManager;
 
     public void setSharedData(SharedData sharedData) {
@@ -27,6 +25,9 @@ public class TestAreaController {
 
         // Listen to device connection status
         this.sharedData.deviceConnectedProperty().addListener((observable, oldValue, newValue) -> {
+
+            LogUtil.highlight(TAG, "Device status changed from " + (oldValue ? "connected" : "disconnected") + " to " + (newValue ? "connected" : "disconnected"));
+
             if (newValue) {
                 workFlowManager.startTest();
             } else {
@@ -41,9 +42,9 @@ public class TestAreaController {
         });
 
         // Listen to station property changes
-        this.sharedData.stationEnumSimpleObjectProperty().addListener((observable, oldStation, newStation) -> {
-            LogUtil.e(TAG, "Station changed from " + oldStation + " to " + newStation);
-            updateTestArea(newStation);
+        this.sharedData.stationProperty().addListener((observable, oldStation, newStation) -> {
+            LogUtil.highlight(TAG, "Station changed from " + oldStation + " to " + newStation);
+            updateTestArea(newStation.intValue());
         });
     }
 
@@ -55,11 +56,11 @@ public class TestAreaController {
     }
 
 
-    private void updateTestArea(StationEnum station) {
+    private void updateTestArea(Integer station) {
         // Clear existing content in the testAreaVBox
         testAreaVBox.getChildren().clear();
 
-        if (station == null) {
+        if (station == null || station == 0) {
             return;
         }
 

@@ -2,6 +2,7 @@ package com.pvetec.inspectra.controller;
 
 import com.pvetec.inspectra.MainController;
 import com.pvetec.inspectra.enums.StationEnum;
+import com.pvetec.inspectra.manager.ConfigManager;
 import com.pvetec.inspectra.pojo.CurrentTest;
 import com.pvetec.inspectra.pojo.SharedData;
 import com.pvetec.inspectra.transmission.TransmissionManager;
@@ -12,6 +13,7 @@ import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -62,19 +64,18 @@ public class NavigationBarController implements DeviceConnectionListener {
     public void setSharedData(SharedData sharedData) {
         this.sharedData = sharedData;
 
-        try {
-            CurrentTest currentTest = JsonBeanConverter.fileToBean("config/currentTest.json", CurrentTest.class);
+        CurrentTest currentTest = ConfigManager.getCurrentTest();
 
-            String stationName = currentTest.getStationName();
-            for (MenuItem item : stationMenuButton.getItems()) {
-                StationEnum userData = (StationEnum) item.getUserData();
-                if (userData.getName().equalsIgnoreCase(stationName)) {
+        String stationName = currentTest.getStationName();
+
+        for (MenuItem item : stationMenuButton.getItems()) {
+            StationEnum stationEnum = StationEnum.fromName(item.getText());
+            if (stationEnum != null) {
+                if (stationName.equals(stationEnum.getName())) {
                     item.setDisable(true);
-                    handleStationSelection(userData);
+                    handleStationSelection(stationEnum);
                 }
             }
-        } catch (IOException e) {
-            throw new RuntimeException(e);
         }
     }
 
@@ -91,8 +92,7 @@ public class NavigationBarController implements DeviceConnectionListener {
         }
 
         try {
-
-            CurrentTest currentTest = JsonBeanConverter.fileToBean("config/currentTest.json", CurrentTest.class);
+            CurrentTest currentTest = ConfigManager.getCurrentTest();
 
             transmissionManager = new TransmissionManager();
 
@@ -120,21 +120,15 @@ public class NavigationBarController implements DeviceConnectionListener {
     }
 
     private void initStationMenu() {
-        try {
-            CurrentTest currentTest = JsonBeanConverter.fileToBean("config/currentTest.json", CurrentTest.class);
-            // Clear existing items
-            stationMenuButton.getItems().clear();
-            // Iterate over StationEnum values and create MenuItem for each
-            for (StationEnum station : StationEnum.values()) {
-                MenuItem menuItem = new MenuItem(station.getName());
-                menuItem.setUserData(station);
-                menuItem.setOnAction(e -> handleStationSelection(station));
-                stationMenuButton.getItems().add(menuItem);
-            }
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+        // Clear existing items
+        stationMenuButton.getItems().clear();
+        // Iterate over StationEnum values and create MenuItem for each
+        for (StationEnum station : StationEnum.values()) {
+            MenuItem menuItem = new MenuItem(station.getName());
+//                menuItem.setUserData(station);
+            menuItem.setOnAction(e -> handleStationSelection(station));
+            stationMenuButton.getItems().add(menuItem);
         }
-
     }
 
     private void handleStationSelection(StationEnum station) {
@@ -143,11 +137,11 @@ public class NavigationBarController implements DeviceConnectionListener {
         }
 
         for (MenuItem item : stationMenuButton.getItems()) {
-            StationEnum userData = (StationEnum) item.getUserData();
-            if (userData.equals(station)) {
+            StationEnum stationEnum = StationEnum.fromName(item.getText());
+            if (stationEnum != null && stationEnum.equals(station)) {
                 item.setDisable(true);
-                StationEnum stationEnum = sharedData.stationEnumSimpleObjectProperty().get();
-                sharedData.setStationEnumProperty(station);
+                sharedData.setStationProperty(station.getCode());
+//                sharedData.setStationEnumProperty(station);
             }
         }
     }
@@ -244,18 +238,32 @@ public class NavigationBarController implements DeviceConnectionListener {
 
     @FXML
     private void showAbout(ActionEvent event) {
+        Stage primaryStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+        // 创建对话框的舞台
+        Stage dialogStage = new Stage();
+        dialogStage.setTitle("About Inspectra");
+        dialogStage.initModality(Modality.APPLICATION_MODAL);
+        dialogStage.initOwner(primaryStage);
+
+        // 获取主窗口的尺寸
+        double primaryWidth = primaryStage.getWidth();
+        double primaryHeight = primaryStage.getHeight();
+        double dialogWidth = primaryWidth * 0.4; // 设置对话框的宽度为主窗口宽度的 40%
+        double dialogHeight = primaryHeight * 0.4; // 设置对话框的高度为主窗口高度的 40%
+
         try {
-            // Load the FXML for the dialog content
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/pvetec/inspectra/controller/AboutDialog.fxml"));
             VBox content = loader.load();
 
-            // Create and configure the dialog
-            Dialog<Void> dialog = new Dialog<>();
-            dialog.setTitle("About Inspectra");
-            dialog.getDialogPane().setContent(content);
+            Scene dialogScene = new Scene(content, dialogWidth, dialogHeight);
+            dialogStage.setScene(dialogScene);
 
-            // Show the dialog and wait until the user closes it
-            dialog.showAndWait();
+            // 将对话框居中显示在主窗口上
+            dialogStage.setX(primaryStage.getX() + (primaryWidth - dialogWidth) / 2);
+            dialogStage.setY(primaryStage.getY() + (primaryHeight - dialogHeight) / 2);
+
+            dialogStage.showAndWait();
         } catch (IOException e) {
             e.printStackTrace();
         }

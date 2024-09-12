@@ -2,16 +2,21 @@ package com.pvetec.inspectra.ui;
 
 import com.pvetec.inspectra.enums.StationEnum;
 import com.pvetec.inspectra.interfaces.StationTestWorkflow;
+import com.pvetec.inspectra.pojo.TestItemView;
 import javafx.scene.layout.VBox;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @author LIWEI
  */
 public class WorkFlowManager {
+
     private StationTestWorkflow stationTestWorkflow;
 
-    public void setStationTestWorkflow(StationEnum stationEnum) {
-        this.stationTestWorkflow = WorkflowFactory.createWorkflow(stationEnum);
+    public void setStationTestWorkflow(Integer station) {
+        this.stationTestWorkflow = WorkflowFactory.createWorkflow(station);
     }
 
     /**

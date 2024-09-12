@@ -16,7 +16,6 @@
         <Button text="Open Dialog" onAction="#openDialog"/>
     </HBox>
 
-
     <!-- Station MenuButton -->
     <MenuButton fx:id="stationMenuButton" text="Station">
         <items>

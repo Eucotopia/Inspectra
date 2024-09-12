@@ -1,0 +1,7 @@
+{
+  "bluetoothAddrPrefix": "503C",
+  "wifiAddrPrefix": "503C",
+  "serialNumberLength": 12,
+  "imei1": "123456789012345",
+  "imei2": "543210987654321"
+}
