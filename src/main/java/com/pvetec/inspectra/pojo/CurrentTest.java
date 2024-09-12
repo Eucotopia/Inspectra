@@ -9,10 +9,13 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class CurrentTest {
+
     // 当前处在哪个占位
-    private Integer stationId;
+    private String stationName;
+
     // 项目名称
-    private String name;
+    private String projectName;
 
     private TestType testType;
+
 }

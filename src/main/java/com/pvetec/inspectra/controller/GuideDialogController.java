@@ -1,5 +1,6 @@
 package com.pvetec.inspectra.controller;
 
+import com.pvetec.inspectra.MainController;
 import com.pvetec.inspectra.pojo.SharedData;
 import com.pvetec.inspectra.pojo.CurrentTest;
 import com.pvetec.inspectra.pojo.Platform;
@@ -24,7 +25,7 @@ public class GuideDialogController {
 
     public void setSharedData(SharedData sharedData) {
         this.sharedData = sharedData;
-        System.out.println("setSharedData:" + sharedData);
+        System.out.println("setSharedData:" + this.sharedData);
     }
 
 
@@ -56,9 +57,10 @@ public class GuideDialogController {
     private Button nextButton;
 
     private String test;
+
     @FXML
     private void initialize() {
-        test="adsfasdf";
+        test = "adsfasdf";
         if (platformList != null) {
             initializeComboBoxes();
         }
@@ -132,7 +134,7 @@ public class GuideDialogController {
 
         // Create final JSON structure
         CurrentTest finishData = new CurrentTest();
-        finishData.setName(selectedProject.getName());
+//        finishData.setName(selectedProject.getName());
         finishData.setTestType(testTypeData);
 
         // Save data to file using JsonBeanConverter
@@ -143,7 +145,7 @@ public class GuideDialogController {
         }
 
         if (sharedData != null) {
-            sharedData.setOperationFinished(true);
+            sharedData.setOperationFinished(!sharedData.operationFinishedProperty().get());
         }
 
         // Close the dialog

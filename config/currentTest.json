@@ -1,0 +1,26 @@
+{
+  "stationName": "Verification_Number",
+  "projectName": "BM400",
+  "testType": {
+    "name": "Verification_Number",
+    "code": 1,
+    "items": [
+      {
+        "code": 1,
+        "name": "Bluetooth Address"
+      },
+      {
+        "code": 2,
+        "name": "WiFi Address"
+      },
+      {
+        "code": 3,
+        "name": "MAC Address"
+      },
+      {
+        "code": 4,
+        "name": "Serial Number"
+      }
+    ]
+  }
+}

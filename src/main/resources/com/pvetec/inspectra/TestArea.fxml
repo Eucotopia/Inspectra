@@ -14,7 +14,6 @@
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
     </padding>
     <VBox spacing="10.0" fillWidth="true">
-        <Label fx:id="welcomeText" text="Welcome to the Test Area"/>
         <!-- Add VBox for dynamic content -->
         <VBox fx:id="testAreaVBox" spacing="10.0" fillWidth="true"/>
     </VBox>

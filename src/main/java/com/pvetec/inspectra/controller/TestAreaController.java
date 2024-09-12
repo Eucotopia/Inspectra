@@ -1,6 +1,11 @@
 package com.pvetec.inspectra.controller;
 
+import com.pvetec.inspectra.interfaces.StationTestWorkflow;
+import com.pvetec.inspectra.pojo.CurrentTest;
 import com.pvetec.inspectra.pojo.SharedData;
+import com.pvetec.inspectra.ui.SnWriterTestWorkflow;
+import com.pvetec.inspectra.ui.VerificationNumberTestWorkflow;
+import com.pvetec.inspectra.utils.JsonBeanConverter;
 import com.pvetec.inspectra.utils.LogUtil;
 import com.pvetec.inspectra.enums.StationEnum; // Assuming you have this enum
 import javafx.fxml.FXML;
@@ -11,37 +16,36 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 
+import java.io.IOException;
+
 public class TestAreaController {
     public static final String TAG = TestAreaController.class.getSimpleName();
-
-    @FXML
-    private Label welcomeText;
 
     @FXML
     private VBox testAreaVBox; // Reference to the VBox in the FXML
 
     private SharedData sharedData;
 
+    StationEnum stationEnum = null;
+
+    StationTestWorkflow workflow = null;
+
     public void setSharedData(SharedData sharedData) {
         this.sharedData = sharedData;
 
         // Listen to device connection status
         this.sharedData.deviceConnectedProperty().addListener((observable, oldValue, newValue) -> {
-            if (oldValue != newValue) {
-                if (newValue) {
-                    welcomeText.setText("Device Connected. Starting Test...");
-                } else {
-                    welcomeText.setText("Device Disconnected. Stopping Test...");
-                }
+            if (newValue) {
+                workflow.startTest();
+            } else {
+                workflow.resetTest();
             }
         });
 
         // Listen to operation finished status
         this.sharedData.operationFinishedProperty().addListener((observable, oldValue, newValue) -> {
-            if (newValue) {
-                LogUtil.e(TAG, "Operation finished");
-                // Update UI or handle post-operation tasks here
-            }
+            LogUtil.e(TAG, "Operation finished");
+            // Update UI or handle post-operation tasks here
         });
 
         // Listen to station property changes
@@ -54,7 +58,37 @@ public class TestAreaController {
     @FXML
     private void initialize() {
         // Initial UI setup
-        updateTestArea(null); // Update test area with default or null station
+        try {
+            // Read the current test configuration from JSON file
+            CurrentTest currentTest = JsonBeanConverter.fileToBean("config/currentTest.json", CurrentTest.class);
+
+            // Log the current test station name
+            LogUtil.highlight(TAG, "Current test station: " + currentTest.getStationName());
+
+            // Map the station name to StationEnum
+            StationEnum stationEnum = getStationEnumFromName(currentTest.getStationName());
+
+            // Update the test area with the default or retrieved station
+            updateTestArea(stationEnum);
+
+        } catch (IOException e) {
+            throw new RuntimeException("Failed to read current test configuration", e);
+        }
+    }
+
+    /**
+     * Maps a station name to the corresponding StationEnum.
+     *
+     * @param stationName The name of the station.
+     * @return The corresponding StationEnum value, or null if not found.
+     */
+    private StationEnum getStationEnumFromName(String stationName) {
+        for (StationEnum station : StationEnum.values()) {
+            if (station.getName().equalsIgnoreCase(stationName)) {
+                return station;
+            }
+        }
+        return null; // Return null if no matching station is found
     }
 
     private void updateTestArea(StationEnum station) {
@@ -62,28 +96,19 @@ public class TestAreaController {
         testAreaVBox.getChildren().clear();
 
         if (station == null) {
-            welcomeText.setText("No Station Selected");
             return;
         }
-
         switch (station) {
             case SN_WRITER:
-                welcomeText.setText("SN Writer Station");
-                createSnWriterForm();
+                workflow = new SnWriterTestWorkflow();
                 break;
-
             case VERIFICATION_NUMBER:
-                welcomeText.setText("Verification Number Station");
-                // Add specific UI components for Verification Number Station
-                Button verificationButton = new Button("Start Verification Test");
-                verificationButton.setOnAction(event -> startTest());
-                testAreaVBox.getChildren().add(verificationButton);
+                workflow = new VerificationNumberTestWorkflow();
                 break;
-
             default:
-                welcomeText.setText("Unknown Station");
-                break;
+                return;
         }
+        workflow.createTestForm(testAreaVBox);
     }
 
     private void createSnWriterForm() {
@@ -134,11 +159,5 @@ public class TestAreaController {
         LogUtil.e(TAG, "WiFi Address: " + wifiAddr);
 
         // Implement the logic to handle the form data here
-    }
-
-    public void startTest() {
-        // Logic to start the test
-        LogUtil.e(TAG, "Starting test...");
-        // Implement the test logic here
     }
 }

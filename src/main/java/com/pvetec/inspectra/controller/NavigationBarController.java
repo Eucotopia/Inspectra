@@ -70,13 +70,15 @@ public class NavigationBarController implements DeviceConnectionListener {
 
         try {
 
-            CurrentTest currentTest = JsonBeanConverter.fileToBean("config/current_test.json", CurrentTest.class);
+            CurrentTest currentTest = JsonBeanConverter.fileToBean("config/currentTest.json", CurrentTest.class);
 
             transmissionManager = new TransmissionManager();
 
-            transmissionManager.setCommunication(currentTest.getName(), this);
+            transmissionManager.setCommunication(currentTest.getProjectName(), this);
 
-        } catch (IOException e) {
+            transmissionManager.openConnection();
+
+        } catch (Exception e) {
             throw new RuntimeException(e);
         }
 
