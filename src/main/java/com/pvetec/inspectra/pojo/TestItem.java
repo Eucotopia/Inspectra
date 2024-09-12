@@ -13,6 +13,7 @@ import lombok.NoArgsConstructor;
  * name, result, description, timestamp, and status. The status of the test item
  * is represented using an enum {@link TestStatus} to ensure type safety and clarity.
  * </p>
+ * @author LIWEI
  */
 @Data
 @AllArgsConstructor

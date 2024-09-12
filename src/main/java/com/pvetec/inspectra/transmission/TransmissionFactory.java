@@ -9,6 +9,7 @@ import com.pvetec.inspectra.transmission.usb.USBTransmission;
 
 /**
  * Factory class for creating different types of Transmission instances.
+ * @author LIWEI
  */
 public class TransmissionFactory {
 

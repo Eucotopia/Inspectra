@@ -4,8 +4,10 @@ import com.pvetec.inspectra.transmission.listener.DeviceConnectionListener;
 
 /**
  * Manager class for handling different types of Transmission instances.
+ * @author LIWEI
  */
 public class TransmissionManager {
+
     private Transmission transmission;
 
     /**

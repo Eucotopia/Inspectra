@@ -38,6 +38,7 @@ public class ADBUtil {
      * Gets the first connected ADB device.
      * @return The ID of the first connected device.
      */
+    //TODO 考虑 offline
     public static String getFirstAdbDevice() {
         List<String> deviceList;
         try {
@@ -50,7 +51,8 @@ public class ADBUtil {
                 .filter(line -> line.endsWith("device"))
                 .map(line -> line.split("\\s")[0])
                 .findFirst()
-                .orElse(null);  // return null if no devices are found
+                // return null if no devices are found
+                .orElse(null);
     }
 
     /**

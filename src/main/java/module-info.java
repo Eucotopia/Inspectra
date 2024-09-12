@@ -13,7 +13,6 @@ module com.pvetec.inspectra {
     requires java.desktop;
     requires com.fazecast.jSerialComm;
 
-
     opens com.pvetec.inspectra to javafx.fxml;
     opens com.pvetec.inspectra.controller to javafx.fxml;
 

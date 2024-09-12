@@ -10,10 +10,14 @@ import javax.usb.event.UsbServicesEvent;
 import javax.usb.event.UsbServicesListener;
 import java.util.List;
 
+/**
+ * @author LIWEI
+ */
 public class USBTransmission implements Transmission {
 
     public static final String TAG = USBTransmission.class.getSimpleName();
-    private static final short MTK_VENDOR_ID = 0x0e8d; // Vendor ID for MTK devices
+    // Vendor ID for MTK devices
+    private static final short MTK_VENDOR_ID = 0x0e8d;
 
     private final DeviceConnectionListener connectionListener;
     private UsbDevice usbDevice;
@@ -101,7 +105,8 @@ public class USBTransmission implements Transmission {
         try {
             UsbServices usbServices = UsbHostManager.getUsbServices();
             UsbHub rootHub = usbServices.getRootUsbHub();
-            List<UsbDevice> devices = rootHub.getAttachedUsbDevices(); // Ensure List is of type UsbDevice
+            // Ensure List is of type UsbDevice
+            List<UsbDevice> devices = rootHub.getAttachedUsbDevices();
 
             for (UsbDevice device : devices) {
                 if (device.equals(this.usbDevice)) {
@@ -118,7 +123,8 @@ public class USBTransmission implements Transmission {
         try {
             UsbServices usbServices = UsbHostManager.getUsbServices();
             UsbHub rootHub = usbServices.getRootUsbHub();
-            List<UsbDevice> devices = rootHub.getAttachedUsbDevices(); // Ensure List is of type UsbDevice
+            // Ensure List is of type UsbDevice
+            List<UsbDevice> devices = rootHub.getAttachedUsbDevices();
             for (UsbDevice device : devices) {
                 if (isAndroidDevice(device)) {
                     return device;
@@ -139,8 +145,10 @@ public class USBTransmission implements Transmission {
         usbInterface.claim();
 
         // Set up the endpoints for communication
-        this.endpointIn = usbInterface.getUsbEndpoint((byte) 0x81); // IN endpoint
-        this.endpointOut = usbInterface.getUsbEndpoint((byte) 0x01); // OUT endpoint
+        // IN endpoint
+        this.endpointIn = usbInterface.getUsbEndpoint((byte) 0x81);
+        // OUT endpoint
+        this.endpointOut = usbInterface.getUsbEndpoint((byte) 0x01);
 
         LogUtil.i(TAG, "USB device initialized successfully.");
     }

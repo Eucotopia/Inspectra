@@ -1,11 +1,6 @@
 package com.pvetec.inspectra.controller;
 
-import com.pvetec.inspectra.MainController;
-import com.pvetec.inspectra.pojo.SharedData;
-import com.pvetec.inspectra.pojo.CurrentTest;
-import com.pvetec.inspectra.pojo.Platform;
-import com.pvetec.inspectra.pojo.Project;
-import com.pvetec.inspectra.pojo.TestType;
+import com.pvetec.inspectra.pojo.*;
 import com.pvetec.inspectra.utils.JsonBeanConverter;
 import com.pvetec.inspectra.utils.LogUtil;
 import javafx.fxml.FXML;

@@ -8,6 +8,7 @@ import lombok.ToString;
 /**
  * Enum representing different types of stations in the inspection process.
  * Each station type has a unique code, a name, and a description.
+ * @author LIWEI
  */
 @Getter
 @ToString

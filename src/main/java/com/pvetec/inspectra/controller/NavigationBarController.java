@@ -2,34 +2,38 @@ package com.pvetec.inspectra.controller;
 
 import com.pvetec.inspectra.MainController;
 import com.pvetec.inspectra.enums.StationEnum;
-import com.pvetec.inspectra.pojo.SharedData;
 import com.pvetec.inspectra.pojo.CurrentTest;
+import com.pvetec.inspectra.pojo.SharedData;
 import com.pvetec.inspectra.transmission.TransmissionManager;
 import com.pvetec.inspectra.transmission.listener.DeviceConnectionListener;
 import com.pvetec.inspectra.utils.JsonBeanConverter;
 import com.pvetec.inspectra.utils.LogUtil;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
-import javafx.event.Event;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.Dialog;
+import javafx.scene.control.Label;
+import javafx.scene.control.MenuItem;
 import javafx.scene.control.*;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-import lombok.Setter;
 
-import java.awt.Desktop;
+import java.awt.*;
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
 
+/**
+ * @author LIWEI
+ */
 public class NavigationBarController implements DeviceConnectionListener {
 
     public static final String TAG = NavigationBarController.class.getSimpleName();
@@ -39,10 +43,10 @@ public class NavigationBarController implements DeviceConnectionListener {
 
     private FXMLLoader guideDialogLoader;
 
-    @Setter
     private SharedData sharedData;
 
     private GuideDialogController guideDialogController;
+
 
     @FXML
     private Circle statusIndicator;
@@ -55,6 +59,24 @@ public class NavigationBarController implements DeviceConnectionListener {
     @FXML
     private Tooltip statusLabelTooltip;
 
+    public void setSharedData(SharedData sharedData) {
+        this.sharedData = sharedData;
+
+        try {
+            CurrentTest currentTest = JsonBeanConverter.fileToBean("config/currentTest.json", CurrentTest.class);
+
+            String stationName = currentTest.getStationName();
+            for (MenuItem item : stationMenuButton.getItems()) {
+                StationEnum userData = (StationEnum) item.getUserData();
+                if (userData.getName().equalsIgnoreCase(stationName)) {
+                    item.setDisable(true);
+                    handleStationSelection(userData);
+                }
+            }
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
 
     @FXML
     private void initialize() {
@@ -98,25 +120,38 @@ public class NavigationBarController implements DeviceConnectionListener {
     }
 
     private void initStationMenu() {
-        // Clear existing items
-        stationMenuButton.getItems().clear();
-        // Iterate over StationEnum values and create MenuItem for each
-        for (StationEnum station : StationEnum.values()) {
-            MenuItem menuItem = new MenuItem(station.getName());
-            menuItem.setOnAction(e -> handleStationSelection(station));
-            stationMenuButton.getItems().add(menuItem);
+        try {
+            CurrentTest currentTest = JsonBeanConverter.fileToBean("config/currentTest.json", CurrentTest.class);
+            // Clear existing items
+            stationMenuButton.getItems().clear();
+            // Iterate over StationEnum values and create MenuItem for each
+            for (StationEnum station : StationEnum.values()) {
+                MenuItem menuItem = new MenuItem(station.getName());
+                menuItem.setUserData(station);
+                menuItem.setOnAction(e -> handleStationSelection(station));
+                stationMenuButton.getItems().add(menuItem);
+            }
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
+
     }
 
     private void handleStationSelection(StationEnum station) {
-        // Execute the appropriate test based on the selected station
-        switch (station) {
-            case SN_WRITER, VERIFICATION_NUMBER:
+        for (MenuItem item : stationMenuButton.getItems()) {
+            item.setDisable(false);
+        }
+
+        for (MenuItem item : stationMenuButton.getItems()) {
+            StationEnum userData = (StationEnum) item.getUserData();
+            if (userData.equals(station)) {
+                item.setDisable(true);
+                StationEnum stationEnum = sharedData.stationEnumSimpleObjectProperty().get();
                 sharedData.setStationEnumProperty(station);
-                break;
-            default:
+            }
         }
     }
+
 
     @FXML
     private void openDialog(ActionEvent event) {
@@ -168,8 +203,6 @@ public class NavigationBarController implements DeviceConnectionListener {
             throw new RuntimeException(e);
         }
     }
-
-
 
 
     /**

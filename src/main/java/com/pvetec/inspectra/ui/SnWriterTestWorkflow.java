@@ -23,7 +23,7 @@ public class SnWriterTestWorkflow implements StationTestWorkflow {
     }
 
     @Override
-    public void createTestForm(VBox vbox) {
+    public void createTestArea(VBox vbox) {
         // Clear existing content in the VBox
         vbox.getChildren().clear();
 

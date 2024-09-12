@@ -1,13 +1,9 @@
 package com.pvetec.inspectra.controller;
 
-import com.pvetec.inspectra.interfaces.StationTestWorkflow;
-import com.pvetec.inspectra.pojo.CurrentTest;
+import com.pvetec.inspectra.enums.StationEnum;
 import com.pvetec.inspectra.pojo.SharedData;
-import com.pvetec.inspectra.ui.SnWriterTestWorkflow;
-import com.pvetec.inspectra.ui.VerificationNumberTestWorkflow;
-import com.pvetec.inspectra.utils.JsonBeanConverter;
+import com.pvetec.inspectra.ui.WorkFlowManager;
 import com.pvetec.inspectra.utils.LogUtil;
-import com.pvetec.inspectra.enums.StationEnum; // Assuming you have this enum
 import javafx.fxml.FXML;
 import javafx.geometry.Insets;
 import javafx.scene.control.Button;
@@ -16,19 +12,20 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 
-import java.io.IOException;
-
+/**
+ * @author LIWEI
+ */
 public class TestAreaController {
     public static final String TAG = TestAreaController.class.getSimpleName();
-
+    // Reference to the VBox in the FXML
     @FXML
-    private VBox testAreaVBox; // Reference to the VBox in the FXML
+    private VBox testAreaVBox;
 
     private SharedData sharedData;
 
     StationEnum stationEnum = null;
 
-    StationTestWorkflow workflow = null;
+    private WorkFlowManager workFlowManager;
 
     public void setSharedData(SharedData sharedData) {
         this.sharedData = sharedData;
@@ -36,9 +33,9 @@ public class TestAreaController {
         // Listen to device connection status
         this.sharedData.deviceConnectedProperty().addListener((observable, oldValue, newValue) -> {
             if (newValue) {
-                workflow.startTest();
+                workFlowManager.startTest();
             } else {
-                workflow.resetTest();
+                workFlowManager.resetTest();
             }
         });
 
@@ -57,39 +54,11 @@ public class TestAreaController {
 
     @FXML
     private void initialize() {
-        // Initial UI setup
-        try {
-            // Read the current test configuration from JSON file
-            CurrentTest currentTest = JsonBeanConverter.fileToBean("config/currentTest.json", CurrentTest.class);
+        // Initialize workflow manager (you might want to pass it in via dependency injection or another method)
+        this.workFlowManager = new WorkFlowManager();
 
-            // Log the current test station name
-            LogUtil.highlight(TAG, "Current test station: " + currentTest.getStationName());
-
-            // Map the station name to StationEnum
-            StationEnum stationEnum = getStationEnumFromName(currentTest.getStationName());
-
-            // Update the test area with the default or retrieved station
-            updateTestArea(stationEnum);
-
-        } catch (IOException e) {
-            throw new RuntimeException("Failed to read current test configuration", e);
-        }
     }
 
-    /**
-     * Maps a station name to the corresponding StationEnum.
-     *
-     * @param stationName The name of the station.
-     * @return The corresponding StationEnum value, or null if not found.
-     */
-    private StationEnum getStationEnumFromName(String stationName) {
-        for (StationEnum station : StationEnum.values()) {
-            if (station.getName().equalsIgnoreCase(stationName)) {
-                return station;
-            }
-        }
-        return null; // Return null if no matching station is found
-    }
 
     private void updateTestArea(StationEnum station) {
         // Clear existing content in the testAreaVBox
@@ -98,17 +67,10 @@ public class TestAreaController {
         if (station == null) {
             return;
         }
-        switch (station) {
-            case SN_WRITER:
-                workflow = new SnWriterTestWorkflow();
-                break;
-            case VERIFICATION_NUMBER:
-                workflow = new VerificationNumberTestWorkflow();
-                break;
-            default:
-                return;
-        }
-        workflow.createTestForm(testAreaVBox);
+
+        workFlowManager.setStationTestWorkflow(station);
+
+        workFlowManager.initializeTestArea(testAreaVBox);
     }
 
     private void createSnWriterForm() {

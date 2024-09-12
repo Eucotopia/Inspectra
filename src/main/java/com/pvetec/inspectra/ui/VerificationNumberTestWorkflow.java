@@ -1,5 +1,6 @@
 package com.pvetec.inspectra.ui;
 
+import com.pvetec.inspectra.constants.FilePathConstant;
 import com.pvetec.inspectra.enums.TestStatus;
 import com.pvetec.inspectra.interfaces.StationTestWorkflow;
 import com.pvetec.inspectra.pojo.CurrentTest;
@@ -19,29 +20,14 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * @author LIWEI
+ */
 public class VerificationNumberTestWorkflow implements StationTestWorkflow {
 
     public static final String TAG = VerificationNumberTestWorkflow.class.getSimpleName();
 
     private final Map<Integer, TestItemView> testItemViews = new HashMap<>();
-
-    public static String checkProp(List<String> strings) {
-        int size = strings.size();
-        LogUtil.i(TAG, "checkProp size = " + size);
-        if (size == 0) {
-            return "";
-        }
-        if (size == 1 && strings.get(0).contains("please input authorization code before use")) {
-            return "";
-        }
-        if (size == 1 && !strings.get(0).contains("please input authorization code before use")) {
-            return strings.get(0);
-        }
-        if (size == 2 && strings.get(0).contains("please input authorization code before use")) {
-            return strings.get(1);
-        }
-        return "";
-    }
 
     @Override
     public void startTest() {
@@ -68,7 +54,8 @@ public class VerificationNumberTestWorkflow implements StationTestWorkflow {
         TestItem firstItem = firstItemView.getTestItem();
 
         // Perform the test and update the result
-        String result = readNumberFromDevice(); // Replace with actual result logic
+        // Replace with actual result logic
+        String result = readNumberFromDevice();
 
         // Update the result of the first test item
         firstItem.setResult(result);
@@ -76,16 +63,15 @@ public class VerificationNumberTestWorkflow implements StationTestWorkflow {
         // Update the result circle and label for the first test item in the UI
         firstItemView.updateStatus(determineStatus(result));
 
-        LogUtil.e(TAG, "Updated Test Item: " + firstItem);
     }
 
     @Override
-    public void createTestForm(VBox vbox) {
+    public void createTestArea(VBox vbox) {
         // Clear existing content in the VBox
         vbox.getChildren().clear();
 
         try {
-            CurrentTest currentTest = JsonBeanConverter.fileToBean("config/currentTest.json", CurrentTest.class);
+            CurrentTest currentTest = JsonBeanConverter.fileToBean(FilePathConstant.CURRENT_TEST, CurrentTest.class);
             for (TestItem item : currentTest.getTestType().getItems()) {
                 TestItemView testItemView = new TestItemView(item.getName());
                 testItemView.setTestItem(item);
@@ -94,6 +80,7 @@ public class VerificationNumberTestWorkflow implements StationTestWorkflow {
         } catch (IOException e) {
             throw new RuntimeException("Failed to load current test configuration.", e);
         }
+
         // Create and add form components
         createVerificationNumberForm(vbox);
     }
@@ -165,6 +152,7 @@ public class VerificationNumberTestWorkflow implements StationTestWorkflow {
 
     private String readNumberFromDevice() {
         // Stub for reading from device
-        return "123456"; // Example value
+        // Example value
+        return "123456";
     }
 }

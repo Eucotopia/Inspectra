@@ -34,9 +34,8 @@ public class MainController {
     public void initialize() {
         loadTestArea();
         loadNavigationBar();
-        System.out.println("initialize:" + sharedData);
-        navigationBarController.setSharedData(sharedData);
         testAreaController.setSharedData(sharedData);
+        navigationBarController.setSharedData(sharedData);
     }
 
     private void loadTestArea() {

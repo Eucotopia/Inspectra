@@ -6,6 +6,9 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import lombok.Data;
 
+/**
+ * @author LIWEI
+ */
 @Data
 public class TestItemView {
     private final Label nameJLabel;
@@ -14,8 +17,10 @@ public class TestItemView {
 
     public TestItemView(String name) {
         nameJLabel = new Label(name);
-        this.resultCircle = new Circle(5.0); // Initialize circle with a default radius
-        this.resultCircle.setFill(Color.GRAY); // Default color is red
+        // Initialize circle with a default radius
+        this.resultCircle = new Circle(5.0);
+        // Default color is red
+        this.resultCircle.setFill(Color.GRAY);
     }
 
     // Update the result circle color based on the status
@@ -29,7 +34,8 @@ public class TestItemView {
                 break;
             case FAILED:
             default:
-                resultCircle.setFill(Color.RED); // Default to red if status is unknown
+                // Default to red if status is unknown
+                resultCircle.setFill(Color.RED);
         }
     }
 }
